@@ -1,0 +1,67 @@
+[
+  {
+    "id": "mentoria-carreira-tech",
+    "title": "Mentoria de Carreira em Tecnologia",
+    "category": "Carreira",
+    "audience": "Individual",
+    "summary": "Diagnóstico profissional, definição de objetivo, plano de desenvolvimento, portfólio e estratégia para próximos passos.",
+    "duration": "6 encontros",
+    "format": "On-line ao vivo",
+    "status": "Vagas limitadas",
+    "investment": "Sob consulta",
+    "image": "assets/images/mentoria-carreira.webp",
+    "skills": ["carreira", "portfólio", "plano", "tecnologia"]
+  },
+  {
+    "id": "mentoria-ia-profissionais",
+    "title": "Mentoria de IA para Profissionais",
+    "category": "Inteligência Artificial",
+    "audience": "Individual ou grupo",
+    "summary": "Acompanhamento para identificar casos de uso, organizar ferramentas, criar práticas seguras e aplicar IA na rotina.",
+    "duration": "8 encontros",
+    "format": "On-line ao vivo",
+    "status": "Vagas limitadas",
+    "investment": "Sob consulta",
+    "image": "assets/images/mentoria-ia.webp",
+    "skills": ["IA", "produtividade", "casos de uso", "plano de ação"]
+  },
+  {
+    "id": "mentoria-lideranca",
+    "title": "Mentoria para Novas Lideranças",
+    "category": "Gestão e Liderança",
+    "audience": "Individual",
+    "summary": "Apoio para transição à liderança, comunicação, priorização, delegação, feedback e desenvolvimento da equipe.",
+    "duration": "8 encontros",
+    "format": "On-line ao vivo",
+    "status": "Agenda aberta",
+    "investment": "Sob consulta",
+    "image": "assets/images/mentoria-lideranca.webp",
+    "skills": ["liderança", "delegação", "feedback", "equipe"]
+  },
+  {
+    "id": "mentoria-projeto-digital",
+    "title": "Mentoria de Projetos Digitais",
+    "category": "Projetos",
+    "audience": "Individual ou equipe",
+    "summary": "Estruture problema, escopo, prioridades, entregas, riscos e validação para transformar uma ideia em projeto executável.",
+    "duration": "10 encontros",
+    "format": "Híbrido",
+    "status": "Sob diagnóstico",
+    "investment": "Sob consulta",
+    "image": "assets/images/mentoria-projetos.webp",
+    "skills": ["projetos", "escopo", "priorização", "validação"]
+  },
+  {
+    "id": "mentoria-educadores",
+    "title": "Mentoria para Educadores e Instrutores",
+    "category": "Educação",
+    "audience": "Individual ou grupo",
+    "summary": "Planejamento de aulas, metodologias ativas, avaliação, materiais, uso de tecnologia e melhoria da experiência de aprendizagem.",
+    "duration": "6 encontros",
+    "format": "On-line ao vivo",
+    "status": "Agenda aberta",
+    "investment": "Sob consulta",
+    "image": "assets/images/mentoria-educacao.webp",
+    "skills": ["educação", "metodologia", "avaliação", "tecnologia"]
+  }
+]

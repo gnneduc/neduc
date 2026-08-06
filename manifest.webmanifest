@@ -1,0 +1,11 @@
+{
+  "name": "Neduc — Núcleo de Educação e Competências",
+  "short_name": "Neduc",
+  "start_url": "./#/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#071a33",
+  "icons": [
+    {"src": "assets/images/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}

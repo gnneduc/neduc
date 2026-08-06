@@ -1,0 +1,32 @@
+= Cinco competências para o futuro do trabalho
+Equipe Neduc
+:revdate: 2026-08-01
+:description: Uma base de competências para contextos profissionais marcados por tecnologia, mudança e colaboração.
+
+O futuro do trabalho não depende apenas de dominar uma ferramenta. Ferramentas mudam, processos evoluem e novas necessidades surgem. Por isso, uma preparação consistente combina competências técnicas, cognitivas e relacionais.
+
+== 1. Aprender continuamente
+
+Aprender de forma contínua significa identificar lacunas, buscar fontes, praticar, receber feedback e ajustar estratégias. Não é acumular cursos, mas transformar estudo em capacidade de agir.
+
+== 2. Analisar problemas
+
+Antes de propor uma solução, é preciso compreender causas, pessoas envolvidas, restrições e consequências. Perguntas bem formuladas evitam que equipes resolvam apenas sintomas.
+
+== 3. Comunicar com clareza
+
+Uma boa ideia perde valor quando não pode ser compreendida. Comunicação inclui escuta, síntese, adaptação da linguagem ao público e registro de decisões.
+
+== 4. Colaborar
+
+Problemas complexos raramente são resolvidos por uma única pessoa. Colaboração exige combinar conhecimentos, negociar prioridades, compartilhar responsabilidades e lidar com divergências de forma construtiva.
+
+== 5. Desenvolver fluência digital
+
+Fluência digital é a capacidade de escolher, utilizar e avaliar tecnologias com senso crítico. Isso inclui compreender limites, segurança, dados, automação e inteligência artificial.
+
+TIP: Escolha uma competência por ciclo de desenvolvimento. Defina uma prática observável, um pequeno projeto e um critério de evolução.
+
+== Competência aparece na prática
+
+Uma competência não é apenas algo que a pessoa conhece. Ela se manifesta quando conhecimentos, habilidades e atitudes são mobilizados em uma situação real. Por isso, desenvolvimento profissional precisa incluir prática, contexto e acompanhamento.
