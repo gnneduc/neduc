@@ -1,121 +1,128 @@
-import { escapeHTML } from './utils.js';
+const escapeHtml = (value = '') => String(value)
+  .replaceAll('&', '&amp;')
+  .replaceAll('<', '&lt;')
+  .replaceAll('>', '&gt;')
+  .replaceAll('"', '&quot;')
+  .replaceAll("'", '&#039;');
 
-function inline(text) {
-  let value = escapeHTML(text);
-  value = value.replace(/https?:\/\/[^\s<]+/g, url => `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`);
-  value = value.replace(/link:([^\[]+)\[([^\]]+)\]/g, '<a href="$1" target="_blank" rel="noopener noreferrer">$2</a>');
-  value = value.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
-  value = value.replace(/_([^_]+)_/g, '<em>$1</em>');
-  value = value.replace(/`([^`]+)`/g, '<code>$1</code>');
-  return value;
-}
+const slugify = (value) => value
+  .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+  .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
-export function parseAsciiDoc(source) {
-  const lines = source.replace(/\r\n/g, '\n').split('\n');
+const inline = (raw) => {
+  let text = escapeHtml(raw);
+  text = text.replace(/https?:\/\/[^\s\]]+\[[^\]]+\]/g, (match) => {
+    const bracket = match.indexOf('[');
+    const url = match.slice(0, bracket);
+    const label = match.slice(bracket + 1, -1);
+    return `<a href="${url}" rel="noopener noreferrer">${label}</a>`;
+  });
+  text = text.replace(/`([^`]+)`/g, '<code>$1</code>');
+  text = text.replace(/\*([^*]+)\*/g, '<strong>$1</strong>');
+  text = text.replace(/_([^_]+)_/g, '<em>$1</em>');
+  return text;
+};
+
+export function parseAsciiDoc(source = '') {
+  const lines = source.replace(/\r/g, '').split('\n');
   const attributes = {};
+  const headings = [];
+  const html = [];
+  let index = 0;
   let title = '';
-  let author = '';
-  let html = '';
   let paragraph = [];
   let listType = null;
   let inCode = false;
-  let code = [];
-  let inQuote = false;
-  let quote = [];
+  let codeLang = '';
+  let codeLines = [];
+  let pendingAdmonition = null;
+  let inAdmonition = false;
+  let admonitionLines = [];
 
   const flushParagraph = () => {
-    if (paragraph.length) {
-      html += `<p>${inline(paragraph.join(' '))}</p>`;
-      paragraph = [];
-    }
+    if (!paragraph.length) return;
+    html.push(`<p>${inline(paragraph.join(' '))}</p>`);
+    paragraph = [];
   };
   const closeList = () => {
-    if (listType) {
-      html += `</${listType}>`;
-      listType = null;
-    }
+    if (!listType) return;
+    html.push(`</${listType}>`);
+    listType = null;
   };
-  const flushQuote = () => {
-    if (quote.length) {
-      html += `<blockquote><p>${inline(quote.join(' '))}</p></blockquote>`;
-      quote = [];
-    }
+  const flushCode = () => {
+    html.push(`<pre><code${codeLang ? ` class="language-${escapeHtml(codeLang)}"` : ''}>${escapeHtml(codeLines.join('\n'))}</code></pre>`);
+    codeLines = [];
+    inCode = false;
+    codeLang = '';
+  };
+  const flushAdmonition = () => {
+    const kind = (pendingAdmonition || 'NOTE').toLowerCase();
+    const label = {note:'Nota', tip:'Dica', important:'Importante', warning:'Atenção', caution:'Cuidado'}[kind] || 'Nota';
+    const content = admonitionLines.join('\n').split(/\n\s*\n/).map(p => `<p>${inline(p.replace(/\n/g,' '))}</p>`).join('');
+    html.push(`<aside class="article-admonition ${kind}" role="note"><strong>${label}</strong>${content}</aside>`);
+    pendingAdmonition = null;
+    admonitionLines = [];
+    inAdmonition = false;
   };
 
-  lines.forEach((raw, index) => {
-    const line = raw.trimEnd();
-
-    if (line === '----') {
-      flushParagraph(); closeList(); flushQuote();
-      if (inCode) {
-        html += `<pre><code>${escapeHTML(code.join('\n'))}</code></pre>`;
-        code = [];
-      }
-      inCode = !inCode;
-      return;
+  // Header
+  if (lines[0]?.startsWith('= ')) {
+    title = lines[0].slice(2).trim();
+    index = 1;
+    while (index < lines.length) {
+      const line = lines[index];
+      const match = line.match(/^:([^:]+):\s*(.*)$/);
+      if (match) { attributes[match[1]] = match[2]; index += 1; continue; }
+      if (line.trim() === '') { index += 1; continue; }
+      break;
     }
-    if (inCode) { code.push(raw); return; }
+  }
 
-    if (line === '____') {
+  for (; index < lines.length; index += 1) {
+    const line = lines[index];
+    const trimmed = line.trim();
+
+    if (inCode) {
+      if (trimmed === '----') flushCode(); else codeLines.push(line);
+      continue;
+    }
+    if (inAdmonition) {
+      if (trimmed === '====') flushAdmonition(); else admonitionLines.push(line);
+      continue;
+    }
+    if (/^\[source(?:,([^\]]+))?\]$/.test(trimmed)) {
       flushParagraph(); closeList();
-      if (inQuote) flushQuote();
-      inQuote = !inQuote;
-      return;
+      codeLang = trimmed.match(/^\[source(?:,([^\]]+))?\]$/)?.[1] || '';
+      if (lines[index + 1]?.trim() === '----') { index += 1; inCode = true; }
+      continue;
     }
-    if (inQuote) { if (line) quote.push(line); return; }
-
-    if (index === 0 && /^=\s+/.test(line)) {
-      title = line.replace(/^=\s+/, '').trim();
-      return;
+    if (/^\[(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]$/.test(trimmed)) {
+      flushParagraph(); closeList(); pendingAdmonition = trimmed.slice(1,-1); continue;
     }
-    if (index === 1 && line && !line.startsWith(':') && !/^==/.test(line)) {
-      author = line;
-      return;
-    }
-    const attr = line.match(/^:([^:]+):\s*(.*)$/);
-    if (attr) { attributes[attr[1].trim()] = attr[2].trim(); return; }
-
-    if (!line.trim()) { flushParagraph(); closeList(); return; }
-
-    const heading = line.match(/^(={2,6})\s+(.+)$/);
-    if (heading) {
+    if (trimmed === '====' && pendingAdmonition) { inAdmonition = true; continue; }
+    if (trimmed.startsWith('== ')) {
       flushParagraph(); closeList();
-      const level = Math.min(6, heading[1].length);
-      const id = heading[2].toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-      html += `<h${level} id="${id}">${inline(heading[2])}</h${level}>`;
-      return;
+      const level = Math.min(6, trimmed.match(/^=+/)[0].length);
+      const label = trimmed.replace(/^=+\s*/, '');
+      const id = slugify(label);
+      headings.push({ level, label, id });
+      html.push(`<h${level} id="${id}">${inline(label)}</h${level}>`);
+      continue;
     }
-
-    const admonition = line.match(/^(NOTE|TIP|IMPORTANT|WARNING|CAUTION):\s*(.*)$/);
-    if (admonition) {
-      flushParagraph(); closeList();
-      const labels = { NOTE: 'Nota', TIP: 'Dica', IMPORTANT: 'Importante', WARNING: 'Atenção', CAUTION: 'Cuidado' };
-      html += `<div class="admonition"><strong>${labels[admonition[1]]}:</strong> ${inline(admonition[2])}</div>`;
-      return;
-    }
-
     const unordered = line.match(/^\*\s+(.+)$/);
-    if (unordered) {
-      flushParagraph();
-      if (listType !== 'ul') { closeList(); html += '<ul>'; listType = 'ul'; }
-      html += `<li>${inline(unordered[1])}</li>`;
-      return;
-    }
-
     const ordered = line.match(/^\.\s+(.+)$/);
-    if (ordered) {
+    if (unordered || ordered) {
       flushParagraph();
-      if (listType !== 'ol') { closeList(); html += '<ol>'; listType = 'ol'; }
-      html += `<li>${inline(ordered[1])}</li>`;
-      return;
+      const desired = unordered ? 'ul' : 'ol';
+      if (listType !== desired) { closeList(); html.push(`<${desired}>`); listType = desired; }
+      html.push(`<li>${inline((unordered || ordered)[1])}</li>`);
+      continue;
     }
-
-    closeList();
-    paragraph.push(line.trim());
-  });
-
-  flushParagraph(); closeList(); flushQuote();
-  if (inCode && code.length) html += `<pre><code>${escapeHTML(code.join('\n'))}</code></pre>`;
-
-  return { title, author, attributes, html, plainText: lines.join(' ') };
+    if (trimmed === '') { flushParagraph(); closeList(); continue; }
+    paragraph.push(trimmed);
+  }
+  flushParagraph(); closeList();
+  if (inCode) flushCode();
+  if (inAdmonition) flushAdmonition();
+  return { title, attributes, headings, html: html.join('\n') };
 }

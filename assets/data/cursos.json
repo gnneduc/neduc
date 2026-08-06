@@ -1,0 +1,176 @@
+[
+  {
+    "id": "curso-ia-trabalho",
+    "slug": "inteligencia-artificial-aplicada-ao-trabalho",
+    "titulo": "Inteligência Artificial Aplicada ao Trabalho",
+    "categoria": "Inteligência Artificial",
+    "nivel": "Iniciante",
+    "cargaHoraria": "20 horas",
+    "formato": [
+      "On-line ao vivo",
+      "Presencial"
+    ],
+    "publico": "Profissionais, equipes e lideranças",
+    "resumo": "Aprenda a integrar IA generativa à rotina profissional com produtividade, segurança, pensamento crítico e aplicação prática.",
+    "resultados": [
+      "Criar prompts claros e reutilizáveis",
+      "Automatizar tarefas recorrentes",
+      "Analisar riscos, privacidade e qualidade",
+      "Construir um plano de adoção responsável"
+    ],
+    "modulos": [
+      "Fundamentos da IA generativa",
+      "Engenharia de prompts",
+      "Produtividade e automação",
+      "Ética, segurança e governança",
+      "Projeto aplicado"
+    ],
+    "destaque": true,
+    "imagem": "assets/images/dados.webp"
+  },
+  {
+    "id": "curso-python-iniciantes",
+    "slug": "programacao-python-para-iniciantes",
+    "titulo": "Programação com Python para Iniciantes",
+    "categoria": "Programação",
+    "nivel": "Iniciante",
+    "cargaHoraria": "30 horas",
+    "formato": [
+      "On-line ao vivo",
+      "EaD"
+    ],
+    "publico": "Estudantes e profissionais em transição",
+    "resumo": "Uma jornada prática para desenvolver lógica, escrever programas e construir pequenos projetos com Python.",
+    "resultados": [
+      "Compreender lógica de programação",
+      "Usar estruturas de decisão e repetição",
+      "Organizar dados em coleções",
+      "Criar um projeto funcional"
+    ],
+    "modulos": [
+      "Ambiente e fundamentos",
+      "Variáveis e tipos",
+      "Decisões e repetições",
+      "Funções e coleções",
+      "Projeto final"
+    ],
+    "destaque": true,
+    "imagem": "assets/images/cursos.webp"
+  },
+  {
+    "id": "curso-dados-decisoes",
+    "slug": "dados-para-tomada-de-decisao",
+    "titulo": "Dados para Tomada de Decisão",
+    "categoria": "Dados",
+    "nivel": "Intermediário",
+    "cargaHoraria": "24 horas",
+    "formato": [
+      "On-line ao vivo",
+      "Presencial"
+    ],
+    "publico": "Analistas, gestores e equipes de negócio",
+    "resumo": "Transforme dados em indicadores, narrativas e decisões mais claras por meio de análise aplicada e visualização.",
+    "resultados": [
+      "Definir perguntas de negócio",
+      "Preparar e analisar dados",
+      "Construir indicadores",
+      "Comunicar achados com clareza"
+    ],
+    "modulos": [
+      "Cultura orientada a dados",
+      "Qualidade e preparação",
+      "Indicadores e métricas",
+      "Visualização",
+      "Estudo de caso"
+    ],
+    "destaque": true,
+    "imagem": "assets/images/inovacao.webp"
+  },
+  {
+    "id": "curso-automacao-processos",
+    "slug": "automacao-de-processos-com-ia",
+    "titulo": "Automação de Processos com IA",
+    "categoria": "Automação",
+    "nivel": "Intermediário",
+    "cargaHoraria": "24 horas",
+    "formato": [
+      "On-line ao vivo",
+      "Presencial"
+    ],
+    "publico": "Profissionais de operações, tecnologia e gestão",
+    "resumo": "Mapeie processos, identifique oportunidades e prototipe automações que reduzam retrabalho e aumentem a qualidade.",
+    "resultados": [
+      "Mapear fluxos e gargalos",
+      "Priorizar automações",
+      "Criar protótipos com IA",
+      "Medir ganhos e riscos"
+    ],
+    "modulos": [
+      "Mapeamento de processos",
+      "Critérios de priorização",
+      "Ferramentas de automação",
+      "Integrações e IA",
+      "Métricas de impacto"
+    ],
+    "destaque": false,
+    "imagem": "assets/images/hero-neduc.webp"
+  },
+  {
+    "id": "curso-lideranca-digital",
+    "slug": "lideranca-e-inovacao-digital",
+    "titulo": "Liderança e Inovação Digital",
+    "categoria": "Gestão",
+    "nivel": "Intermediário",
+    "cargaHoraria": "20 horas",
+    "formato": [
+      "Presencial",
+      "On-line ao vivo"
+    ],
+    "publico": "Líderes, coordenadores e gestores",
+    "resumo": "Fortaleça comunicação, tomada de decisão e condução de mudanças em ambientes impulsionados por tecnologia.",
+    "resultados": [
+      "Liderar mudanças com clareza",
+      "Criar ambientes colaborativos",
+      "Tomar decisões orientadas por evidências",
+      "Desenvolver equipes"
+    ],
+    "modulos": [
+      "Papel da liderança",
+      "Comunicação e confiança",
+      "Decisão e colaboração",
+      "Gestão da mudança",
+      "Plano de liderança"
+    ],
+    "destaque": false,
+    "imagem": "assets/images/lideranca.webp"
+  },
+  {
+    "id": "curso-prompt-engineering",
+    "slug": "fundamentos-de-prompt-engineering",
+    "titulo": "Fundamentos de Prompt Engineering",
+    "categoria": "Inteligência Artificial",
+    "nivel": "Iniciante",
+    "cargaHoraria": "12 horas",
+    "formato": [
+      "On-line ao vivo",
+      "EaD"
+    ],
+    "publico": "Pessoas que utilizam IA generativa no cotidiano",
+    "resumo": "Desenvolva instruções melhores, avalie respostas e crie bibliotecas de prompts para tarefas profissionais.",
+    "resultados": [
+      "Estruturar contexto e objetivo",
+      "Escolher exemplos e restrições",
+      "Avaliar respostas",
+      "Criar modelos reutilizáveis"
+    ],
+    "modulos": [
+      "Como modelos respondem",
+      "Estrutura de um bom prompt",
+      "Técnicas e exemplos",
+      "Avaliação",
+      "Biblioteca pessoal"
+    ],
+    "destaque": false,
+    "imagem": "assets/images/aprendizagem.webp"
+  }
+]

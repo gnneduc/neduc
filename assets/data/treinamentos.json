@@ -1,0 +1,110 @@
+[
+  {
+    "id": "treinamento-ia-produtividade",
+    "titulo": "IA para Produtividade Corporativa",
+    "categoria": "Inteligência Artificial",
+    "duracao": "4 a 12 horas",
+    "formato": "In company — presencial ou on-line",
+    "publico": "Equipes administrativas, técnicas e lideranças",
+    "resumo": "Capacitação contextualizada para incorporar IA às atividades da organização sem perder qualidade, segurança e responsabilidade.",
+    "entregaveis": [
+      "Diagnóstico inicial",
+      "Casos de uso por área",
+      "Atividades práticas",
+      "Guia de boas práticas",
+      "Plano de aplicação"
+    ],
+    "imagem": "assets/images/treinamentos.webp",
+    "destaque": true
+  },
+  {
+    "id": "treinamento-lideranca",
+    "titulo": "Liderança para Transformação Digital",
+    "categoria": "Liderança",
+    "duracao": "8 a 16 horas",
+    "formato": "In company — presencial ou on-line",
+    "publico": "Gestores, coordenadores e líderes de equipes",
+    "resumo": "Desenvolvimento de competências para comunicar mudanças, engajar pessoas e transformar estratégia em ação.",
+    "entregaveis": [
+      "Mapa de desafios",
+      "Dinâmicas situacionais",
+      "Plano de comunicação",
+      "Feedback estruturado",
+      "Plano de ação"
+    ],
+    "imagem": "assets/images/lideranca.webp",
+    "destaque": true
+  },
+  {
+    "id": "treinamento-dados",
+    "titulo": "Cultura de Dados para Equipes",
+    "categoria": "Dados",
+    "duracao": "6 a 12 horas",
+    "formato": "Workshop ou trilha corporativa",
+    "publico": "Times de negócio, operações e gestão",
+    "resumo": "Treinamento para melhorar a leitura de indicadores, formular perguntas e tomar decisões baseadas em evidências.",
+    "entregaveis": [
+      "Diagnóstico de maturidade",
+      "Exercícios com indicadores",
+      "Estudo de caso",
+      "Canvas de decisão",
+      "Recomendações"
+    ],
+    "imagem": "assets/images/dados.webp",
+    "destaque": false
+  },
+  {
+    "id": "treinamento-etica-ia",
+    "titulo": "Uso Responsável, Ética e Segurança em IA",
+    "categoria": "Governança",
+    "duracao": "4 a 8 horas",
+    "formato": "Palestra, workshop ou treinamento",
+    "publico": "Todas as áreas que utilizam soluções de IA",
+    "resumo": "Orienta equipes a reconhecer riscos, proteger informações e estabelecer práticas de uso responsável de IA.",
+    "entregaveis": [
+      "Mapa de riscos",
+      "Cenários práticos",
+      "Checklist de segurança",
+      "Princípios de uso",
+      "Plano de conscientização"
+    ],
+    "imagem": "assets/images/online.webp",
+    "destaque": false
+  },
+  {
+    "id": "treinamento-processos",
+    "titulo": "Melhoria e Automação de Processos",
+    "categoria": "Automação",
+    "duracao": "8 a 20 horas",
+    "formato": "Workshop aplicado ou bootcamp",
+    "publico": "Operações, atendimento, tecnologia e gestão",
+    "resumo": "A equipe aprende a mapear rotinas, eliminar desperdícios e desenhar automações orientadas a valor.",
+    "entregaveis": [
+      "Mapa do processo",
+      "Matriz de priorização",
+      "Protótipo",
+      "Indicadores",
+      "Roadmap"
+    ],
+    "imagem": "assets/images/hero-neduc.webp",
+    "destaque": false
+  },
+  {
+    "id": "treinamento-inovacao",
+    "titulo": "Workshop de Inovação e Solução de Problemas",
+    "categoria": "Inovação",
+    "duracao": "4 a 12 horas",
+    "formato": "Presencial ou on-line ao vivo",
+    "publico": "Equipes multidisciplinares",
+    "resumo": "Encontro dinâmico para transformar desafios reais em ideias priorizadas, experimentos e próximos passos claros.",
+    "entregaveis": [
+      "Definição do desafio",
+      "Ideação guiada",
+      "Priorização",
+      "Protótipo conceitual",
+      "Plano de experimento"
+    ],
+    "imagem": "assets/images/inovacao.webp",
+    "destaque": false
+  }
+]

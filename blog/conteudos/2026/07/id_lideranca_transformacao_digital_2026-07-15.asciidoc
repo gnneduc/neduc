@@ -1,0 +1,47 @@
+= Liderança na transformação digital: tecnologia começa pelas pessoas
+:author: Equipe Neduc
+:revdate: 2026-07-15
+:description: A transformação sustentável depende de direção, comunicação, confiança e aprendizagem contínua.
+:keywords: liderança, transformação digital, inovação, equipes
+
+Transformação digital não acontece apenas quando uma organização adquire novas ferramentas. Ela acontece quando pessoas compreendem o propósito da mudança, desenvolvem competências e adaptam práticas de trabalho.
+
+== Dê sentido à mudança
+
+Lideranças precisam explicar o problema que será enfrentado, o resultado esperado e como a mudança afeta cada equipe. Quando a mensagem se limita à ferramenta, surgem dúvidas, resistência e uso superficial.
+
+Uma comunicação clara conecta:
+
+* contexto e urgência;
+* benefícios para clientes e equipes;
+* responsabilidades;
+* limites e riscos;
+* próximos passos.
+
+== Crie segurança para aprender
+
+Novas tecnologias exigem experimentação. Pessoas precisam ter espaço para fazer perguntas, testar alternativas e reconhecer erros sem medo de exposição. Isso não elimina a responsabilidade; cria condições para aprender mais rápido.
+
+== Desenvolva critérios, não dependência
+
+A liderança deve ajudar a equipe a avaliar quando uma tecnologia é útil, quando não é e quais evidências sustentam uma decisão. O objetivo não é seguir tendências, mas ampliar a capacidade de resolver problemas.
+
+[WARNING]
+====
+Pressão por adoção rápida, sem regras de segurança e sem tempo para aprender, pode aumentar retrabalho, riscos e desconfiança.
+====
+
+== Acompanhe sinais de evolução
+
+Além de medir uso de ferramentas, observe:
+
+* qualidade das decisões;
+* redução de retrabalho;
+* colaboração entre áreas;
+* autonomia da equipe;
+* segurança e conformidade;
+* resultados para clientes e usuários.
+
+== Lidere pelo exemplo
+
+Líderes que aprendem, compartilham dúvidas, pedem feedback e respeitam limites fortalecem uma cultura de desenvolvimento contínuo. A tecnologia pode acelerar processos, mas são as pessoas que constroem propósito, confiança e resultado sustentável.

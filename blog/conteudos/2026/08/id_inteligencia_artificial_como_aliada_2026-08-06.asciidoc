@@ -1,0 +1,51 @@
+= Inteligência artificial como aliada: do entusiasmo à aplicação responsável
+:author: Equipe Neduc
+:revdate: 2026-08-06
+:description: Um roteiro prático para incorporar IA ao trabalho com objetivos claros, revisão humana e segurança.
+:keywords: inteligência artificial, produtividade, trabalho, segurança
+
+A inteligência artificial já faz parte de muitas rotinas profissionais. O ponto decisivo, porém, não é apenas *ter acesso a uma ferramenta*: é saber transformá-la em uma aliada confiável para pensar, produzir, revisar e decidir melhor.
+
+== Comece pelo problema, não pela ferramenta
+
+Antes de abrir uma plataforma de IA, formule três perguntas:
+
+* Qual resultado preciso alcançar?
+* Qual parte da tarefa exige julgamento humano?
+* Quais informações podem ou não ser compartilhadas?
+
+Essa preparação reduz respostas genéricas e ajuda a escolher o uso mais adequado: explorar ideias, resumir documentos, estruturar um plano, revisar um texto, analisar alternativas ou automatizar uma etapa repetitiva.
+
+== Use um ciclo de trabalho com revisão humana
+
+Um fluxo simples pode ser aplicado em diferentes áreas:
+
+. Defina o objetivo e o público.
+. Forneça contexto suficiente.
+. Solicite uma primeira versão.
+. Verifique fatos, coerência, tom e riscos.
+. Refine a instrução e compare alternativas.
+. Registre o prompt que funcionou para reutilização.
+
+[IMPORTANT]
+====
+A IA pode apoiar uma decisão, mas a responsabilidade sobre o uso da resposta continua sendo humana. Informações críticas devem ser conferidas em fontes confiáveis.
+====
+
+== Proteja dados e preserve a qualidade
+
+Evite inserir dados pessoais, informações estratégicas, contratos, credenciais ou conteúdos confidenciais em ferramentas que não tenham sido aprovadas pela organização. Além disso, avalie possíveis vieses e não trate respostas convincentes como automaticamente corretas.
+
+Uma boa política interna define:
+
+* ferramentas autorizadas;
+* tipos de informação permitidos;
+* situações que exigem validação especializada;
+* critérios de registro e transparência;
+* responsabilidades de usuários e lideranças.
+
+== Transforme ganhos isolados em uma prática sustentável
+
+O ganho real aparece quando a equipe compartilha casos de uso, mantém uma biblioteca de prompts, mede tempo economizado e acompanha a qualidade. Comece pequeno, escolha tarefas de baixo risco e aprenda com ciclos curtos.
+
+A Neduc trabalha com aprendizagem aplicada: diagnosticar, planejar, aprender e aplicar, acompanhar e ajustar, medir e evoluir. Esse mesmo processo ajuda pessoas e organizações a adotarem IA com propósito.

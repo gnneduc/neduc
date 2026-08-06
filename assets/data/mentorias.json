@@ -1,0 +1,70 @@
+[
+  {
+    "id": "mentoria-carreira-tech",
+    "titulo": "Mentoria de Carreira em Tecnologia",
+    "modalidade": "Individual ou pequenos grupos",
+    "ciclo": "6 ou 10 encontros",
+    "publico": "Estudantes, iniciantes e profissionais em transição",
+    "resumo": "Orientação para definir objetivos, organizar estudos, construir portfólio e tomar decisões de carreira com mais clareza.",
+    "etapas": [
+      "Diagnóstico profissional",
+      "Objetivos e prioridades",
+      "Plano de desenvolvimento",
+      "Acompanhamento e feedback",
+      "Revisão de resultados"
+    ],
+    "imagem": "assets/images/mentorias.webp",
+    "destaque": true
+  },
+  {
+    "id": "mentoria-ia-negocios",
+    "titulo": "Mentoria de IA Aplicada ao Negócio",
+    "modalidade": "Individual, liderança ou equipe",
+    "ciclo": "4 a 8 encontros",
+    "publico": "Empreendedores, gestores e profissionais",
+    "resumo": "Apoio para selecionar casos de uso, priorizar iniciativas e criar um plano seguro de adoção de inteligência artificial.",
+    "etapas": [
+      "Contexto e desafios",
+      "Mapa de oportunidades",
+      "Priorização",
+      "Prototipação",
+      "Plano de adoção"
+    ],
+    "imagem": "assets/images/hero-neduc.webp",
+    "destaque": true
+  },
+  {
+    "id": "mentoria-lideranca",
+    "titulo": "Mentoria de Liderança e Gestão de Equipes",
+    "modalidade": "Individual",
+    "ciclo": "6 a 12 encontros",
+    "publico": "Líderes novos ou experientes",
+    "resumo": "Acompanhamento para fortalecer comunicação, delegação, feedback, tomada de decisão e desenvolvimento de pessoas.",
+    "etapas": [
+      "Perfil e contexto",
+      "Desafios prioritários",
+      "Práticas de liderança",
+      "Aplicação entre encontros",
+      "Avaliação da evolução"
+    ],
+    "imagem": "assets/images/lideranca.webp",
+    "destaque": false
+  },
+  {
+    "id": "mentoria-projetos-dados",
+    "titulo": "Mentoria para Projetos de Dados e Automação",
+    "modalidade": "Individual ou equipe de projeto",
+    "ciclo": "5 a 10 encontros",
+    "publico": "Analistas, desenvolvedores e equipes de inovação",
+    "resumo": "Orientação técnica e metodológica para transformar uma ideia em projeto viável, mensurável e apresentável.",
+    "etapas": [
+      "Problema e objetivos",
+      "Escopo e arquitetura",
+      "Plano de execução",
+      "Revisões técnicas",
+      "Apresentação de resultados"
+    ],
+    "imagem": "assets/images/dados.webp",
+    "destaque": false
+  }
+]
