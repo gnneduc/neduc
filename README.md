@@ -1,125 +1,104 @@
 # Site institucional Neduc
 
-Site estático, responsivo e acessível para a **Neduc — Núcleo de Educação e Competências**, desenvolvido somente com **HTML5, CSS e JavaScript**, sem frameworks ou etapa de compilação.
+SPA estático desenvolvido com HTML5, CSS e JavaScript puro, sem frameworks ou bibliotecas externas. O conteúdo institucional foi estruturado a partir da apresentação da Neduc — Núcleo de Educação e Competências.
 
-## Arquitetura
+## Recursos
 
-O projeto usa uma **SPA multipágina híbrida**:
+- Rotas SPA por hash, compatíveis com GitHub Pages.
+- Cada item do menu utiliza uma página parcial independente em `pages/`.
+- Cursos, treinamentos e mentorias carregados de arquivos JSON.
+- Blog com artigos em AsciiDoc organizados por `ano/mês`.
+- Conversor AsciiDoc local e seguro para os recursos utilizados nos artigos.
+- Pesquisa e filtros em cursos, treinamentos, mentorias e blog.
+- Layout responsivo, navegação por teclado, foco visível, contraste, semântica e suporte a movimento reduzido.
+- Nenhuma dependência externa e nenhum processo de build.
 
-- cada item principal possui uma página física (`/cursos/`, `/blog/`, `/contato/` etc.), permitindo acesso direto no GitHub Pages;
-- o JavaScript intercepta a navegação interna e atualiza o conteúdo sem recarregar toda a página;
-- o caminho-base é calculado a partir do próprio módulo JavaScript, então o site funciona em domínio próprio e em repositórios de projeto, como `usuario.github.io/nome-do-repositorio/`.
+## Estrutura
+
+```text
+.
+├── index.html
+├── 404.html
+├── pages/
+├── assets/
+│   ├── css/styles.css
+│   ├── js/
+│   ├── data/
+│   └── img/
+└── blog/
+    ├── index.json
+    └── 2026/
+        ├── 06/
+        ├── 07/
+        └── 08/
+```
 
 ## Executar localmente
 
-A leitura de JSON e AsciiDoc exige HTTP. Não abra `index.html` diretamente pelo gerenciador de arquivos.
+O navegador bloqueia `fetch()` quando o projeto é aberto diretamente por `file://`. Use um servidor local:
 
 ```bash
-cd neduc-site
-python3 -m http.server 8000
+python3 -m http.server 8080
 ```
 
-Acesse `http://localhost:8000`.
+Acesse `http://localhost:8080`.
+
+Alternativa com Node.js:
+
+```bash
+npx serve .
+```
+
+O site publicado não depende do Node.js.
 
 ## Publicar no GitHub Pages
 
-1. Crie um repositório e envie todo o conteúdo desta pasta para a branch principal.
-2. No GitHub, abra **Settings > Pages**.
-3. Em **Build and deployment**, selecione **Deploy from a branch**.
-4. Escolha a branch principal e a pasta `/ (root)`.
+1. Crie um repositório no GitHub.
+2. Envie todos os arquivos para a raiz da branch `main`.
+3. Em **Settings → Pages**, selecione **Deploy from a branch**.
+4. Selecione a branch `main` e a pasta `/ (root)`.
 5. Salve e aguarde a publicação.
 
-O arquivo `.nojekyll` evita processamento desnecessário pelo Jekyll.
+As rotas usam fragmentos como `#/cursos`, portanto funcionam tanto em domínio próprio quanto em um subdiretório de projeto do GitHub Pages.
 
-## Atualizar catálogos JSON
+## Adicionar um curso, treinamento ou mentoria
 
-Arquivos:
+Edite o JSON correspondente em `assets/data/`. Preserve os nomes dos campos existentes. O site monta os cartões automaticamente.
 
-- `assets/data/cursos.json`
-- `assets/data/treinamentos.json`
-- `assets/data/mentorias.json`
+## Publicar um artigo
 
-Cada objeto possui campos de título, público, formato, duração, resumo, resultados e imagem. É possível adicionar ou remover itens sem alterar o HTML.
-
-Valide a sintaxe após editar:
-
-```bash
-python3 -m json.tool assets/data/cursos.json > /dev/null
-```
-
-## Publicar artigo em AsciiDoc
-
-1. Crie o diretório do ano e do mês, caso não exista:
-   `blog/conteudos/AAAA/MM/`
-2. Use o padrão obrigatório:
-   `id_<nome_da_publicacao>_<AAAA-MM-DD>.asciidoc`
-3. Adicione os metadados do artigo em `assets/data/blog.json`.
-
-Exemplo:
-
-```asciidoc
-= Título do artigo
-:author: Equipe Neduc
-:revdate: 2026-08-06
-:description: Resumo do artigo.
-
-Introdução do conteúdo.
-
-== Primeiro tópico
-
-* Item um
-* Item dois
-```
-
-O parser local suporta título, atributos, subtítulos, parágrafos, listas, links, negrito, itálico, código e blocos de aviso (`NOTE`, `TIP`, `IMPORTANT`, `WARNING`, `CAUTION`). Ele não executa HTML arbitrário.
-
-## Formulário de contato
-
-GitHub Pages não processa formulários no servidor. Por isso, o formulário valida os campos e abre o aplicativo de e-mail do visitante com a mensagem preenchida. Para envio automático, integre futuramente um serviço de formulários e atualize a política de privacidade e a Content Security Policy.
-
-## Acessibilidade e UX
-
-O projeto foi estruturado tomando a WCAG 2.2 nível AA como referência:
-
-- HTML semântico, landmarks e hierarquia de títulos;
-- navegação por teclado, menu com `aria-expanded` e fechamento por `Esc`;
-- link “Pular para o conteúdo”;
-- foco visível, contraste e alvos de interação adequados;
-- formulários com rótulos, instruções e erros associados;
-- textos alternativos e imagens decorativas sem ruído para leitores de tela;
-- adaptação a movimento reduzido;
-- layouts responsivos de 320 px a telas amplas;
-- sem dependências externas, rastreadores ou fontes remotas.
-
-Uma declaração de acessibilidade está em `acessibilidade.html`.
-
-## Identidade e conteúdo
-
-Textos institucionais e imagens foram derivados da apresentação Overview da Neduc fornecida para o projeto. O catálogo inicial é editável e deve ser revisado antes da publicação comercial para confirmar nomes, cargas horárias, valores e disponibilidade.
-
-## Estrutura principal
+1. Crie a pasta `blog/ANO/MÊS/`, caso ainda não exista.
+2. Crie o arquivo com o padrão:
 
 ```text
-neduc-site/
-├── index.html
-├── quem-somos/index.html
-├── cursos/index.html
-├── blog/index.html
-├── treinamentos/index.html
-├── mentorias/index.html
-├── contato/index.html
-├── assets/
-│   ├── css/styles.css
-│   ├── js/app.js
-│   ├── js/asciidoc.js
-│   ├── data/*.json
-│   └── images/*
-├── blog/conteudos/AAAA/MM/*.asciidoc
-├── acessibilidade.html
-├── privacidade.html
-├── 404.html
-├── manifest.webmanifest
-├── sitemap.xml
-├── robots.txt
-└── .nojekyll
+id_nome-da-publicacao_AAAA-MM-DD.asciidoc
 ```
+
+3. Use os metadados:
+
+```asciidoc
+= Título
+:author: Equipe Neduc
+:revdate: 2026-08-06
+:description: Resumo para a página e mecanismos de busca.
+:tags: tema 1, tema 2
+```
+
+4. Adicione o artigo em `blog/index.json`, informando o caminho completo no campo `arquivo`.
+
+O conversor implementa títulos, parágrafos, listas, negrito, itálico, código, links, citações e blocos NOTE/TIP/IMPORTANT/WARNING.
+
+## Integrações pendentes para produção comercial
+
+- O formulário de contato usa `mailto:` porque o GitHub Pages não executa backend.
+- O formulário de newsletter é demonstrativo. Conecte-o a um serviço adequado antes de captar dados reais.
+- Revise a política de privacidade após adicionar analytics, CRM, formulários externos ou pagamentos.
+- Substitua ou complemente os dados institucionais conforme domínio, e-mail e canais definitivos.
+
+## Testes recomendados antes do lançamento
+
+- Navegação completa por teclado.
+- Leitores de tela NVDA, VoiceOver ou Orca.
+- Lighthouse e axe DevTools.
+- Celulares reais em diferentes larguras.
+- Validação HTML e revisão de contraste.

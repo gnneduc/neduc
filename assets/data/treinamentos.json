@@ -1,110 +1,52 @@
 [
   {
-    "id": "treinamento-ia-produtividade",
-    "titulo": "IA para Produtividade Corporativa",
-    "categoria": "Inteligência Artificial",
-    "duracao": "4 a 12 horas",
-    "formato": "In company — presencial ou on-line",
-    "publico": "Equipes administrativas, técnicas e lideranças",
-    "resumo": "Capacitação contextualizada para incorporar IA às atividades da organização sem perder qualidade, segurança e responsabilidade.",
-    "entregaveis": [
-      "Diagnóstico inicial",
-      "Casos de uso por área",
-      "Atividades práticas",
-      "Guia de boas práticas",
-      "Plano de aplicação"
-    ],
-    "imagem": "assets/images/treinamentos.webp",
-    "destaque": true
+    "id": "ia-equipes",
+    "titulo": "IA Aplicada às Rotinas da Equipe",
+    "resumo": "Capacitação para integrar inteligência artificial a tarefas, processos e decisões com uso responsável.",
+    "categoria": "Tecnologia",
+    "formato": "In company",
+    "duracao": "Personalizável",
+    "temas": ["IA generativa", "Produtividade", "Processos", "Governança"],
+    "imagem": "assets/img/equipes.webp"
   },
   {
-    "id": "treinamento-lideranca",
-    "titulo": "Liderança para Transformação Digital",
+    "id": "lideranca-comunicacao",
+    "titulo": "Liderança, Comunicação e Gestão de Pessoas",
+    "resumo": "Desenvolvimento de líderes para comunicar, orientar, decidir e fortalecer a colaboração.",
     "categoria": "Liderança",
-    "duracao": "8 a 16 horas",
-    "formato": "In company — presencial ou on-line",
-    "publico": "Gestores, coordenadores e líderes de equipes",
-    "resumo": "Desenvolvimento de competências para comunicar mudanças, engajar pessoas e transformar estratégia em ação.",
-    "entregaveis": [
-      "Mapa de desafios",
-      "Dinâmicas situacionais",
-      "Plano de comunicação",
-      "Feedback estruturado",
-      "Plano de ação"
-    ],
-    "imagem": "assets/images/lideranca.webp",
-    "destaque": true
+    "formato": "Presencial ou on-line",
+    "duracao": "Personalizável",
+    "temas": ["Liderança", "Feedback", "Comunicação", "Decisão"],
+    "imagem": "assets/img/treinamentos.webp"
   },
   {
-    "id": "treinamento-dados",
-    "titulo": "Cultura de Dados para Equipes",
-    "categoria": "Dados",
-    "duracao": "6 a 12 horas",
-    "formato": "Workshop ou trilha corporativa",
-    "publico": "Times de negócio, operações e gestão",
-    "resumo": "Treinamento para melhorar a leitura de indicadores, formular perguntas e tomar decisões baseadas em evidências.",
-    "entregaveis": [
-      "Diagnóstico de maturidade",
-      "Exercícios com indicadores",
-      "Estudo de caso",
-      "Canvas de decisão",
-      "Recomendações"
-    ],
-    "imagem": "assets/images/dados.webp",
-    "destaque": false
+    "id": "cultura-dados",
+    "titulo": "Cultura de Dados e Indicadores",
+    "resumo": "Treinamento para qualificar o uso de dados, indicadores e evidências em diferentes áreas.",
+    "categoria": "Tecnologia",
+    "formato": "In company",
+    "duracao": "Personalizável",
+    "temas": ["Dados", "Indicadores", "Decisão", "Visualização"],
+    "imagem": "assets/img/metodologia.webp"
   },
   {
-    "id": "treinamento-etica-ia",
-    "titulo": "Uso Responsável, Ética e Segurança em IA",
-    "categoria": "Governança",
-    "duracao": "4 a 8 horas",
-    "formato": "Palestra, workshop ou treinamento",
-    "publico": "Todas as áreas que utilizam soluções de IA",
-    "resumo": "Orienta equipes a reconhecer riscos, proteger informações e estabelecer práticas de uso responsável de IA.",
-    "entregaveis": [
-      "Mapa de riscos",
-      "Cenários práticos",
-      "Checklist de segurança",
-      "Princípios de uso",
-      "Plano de conscientização"
-    ],
-    "imagem": "assets/images/online.webp",
-    "destaque": false
-  },
-  {
-    "id": "treinamento-processos",
-    "titulo": "Melhoria e Automação de Processos",
-    "categoria": "Automação",
-    "duracao": "8 a 20 horas",
-    "formato": "Workshop aplicado ou bootcamp",
-    "publico": "Operações, atendimento, tecnologia e gestão",
-    "resumo": "A equipe aprende a mapear rotinas, eliminar desperdícios e desenhar automações orientadas a valor.",
-    "entregaveis": [
-      "Mapa do processo",
-      "Matriz de priorização",
-      "Protótipo",
-      "Indicadores",
-      "Roadmap"
-    ],
-    "imagem": "assets/images/hero-neduc.webp",
-    "destaque": false
-  },
-  {
-    "id": "treinamento-inovacao",
+    "id": "workshop-inovacao",
     "titulo": "Workshop de Inovação e Solução de Problemas",
+    "resumo": "Encontro dinâmico para compreender desafios, gerar ideias e construir caminhos de aplicação.",
     "categoria": "Inovação",
-    "duracao": "4 a 12 horas",
-    "formato": "Presencial ou on-line ao vivo",
-    "publico": "Equipes multidisciplinares",
-    "resumo": "Encontro dinâmico para transformar desafios reais em ideias priorizadas, experimentos e próximos passos claros.",
-    "entregaveis": [
-      "Definição do desafio",
-      "Ideação guiada",
-      "Priorização",
-      "Protótipo conceitual",
-      "Plano de experimento"
-    ],
-    "imagem": "assets/images/inovacao.webp",
-    "destaque": false
+    "formato": "Workshop",
+    "duracao": "4 a 8 horas",
+    "temas": ["Inovação", "Criatividade", "Problemas", "Colaboração"],
+    "imagem": "assets/img/quem-somos.webp"
+  },
+  {
+    "id": "bootcamp-transformacao",
+    "titulo": "Bootcamp de Transformação Digital",
+    "resumo": "Jornada intensiva com desafios, prototipação e aplicação de soluções digitais.",
+    "categoria": "Inovação",
+    "formato": "Bootcamp",
+    "duracao": "16 a 24 horas",
+    "temas": ["Transformação digital", "Projetos", "Tecnologia", "Aplicação"],
+    "imagem": "assets/img/hero-neduc.webp"
   }
 ]

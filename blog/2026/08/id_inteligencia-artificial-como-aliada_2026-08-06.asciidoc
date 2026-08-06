@@ -1,0 +1,50 @@
+= Como tornar a inteligência artificial uma aliada no trabalho
+:author: Equipe Neduc
+:revdate: 2026-08-06
+:description: Um caminho prático para usar inteligência artificial com objetivos claros, validação humana e responsabilidade.
+:tags: IA, produtividade, trabalho
+
+A inteligência artificial pode ampliar a capacidade de pesquisar, organizar, criar, analisar e comunicar. O ganho real, porém, não aparece apenas por utilizar uma ferramenta. Ele surge quando a tecnologia é integrada a um processo de trabalho com propósito, contexto e critérios de qualidade.
+
+== Comece pelo problema, não pela ferramenta
+
+Antes de abrir uma aplicação de IA, defina o que precisa melhorar. A tarefa é repetitiva? Exige muitas versões? Consome tempo de pesquisa? Há informações que precisam ser resumidas ou comparadas?
+
+Uma boa pergunta inicial é: *qual resultado preciso produzir e como vou avaliar se ele está correto?*
+
+== Use contexto e critérios claros
+
+Solicitações genéricas produzem respostas genéricas. Ao orientar uma IA, apresente:
+
+* o objetivo da tarefa;
+* o público que receberá o resultado;
+* as informações de contexto;
+* o formato esperado;
+* os limites e critérios de qualidade.
+
+Por exemplo, em vez de pedir apenas “faça um plano de treinamento”, informe o público, a duração, as competências, o nível de conhecimento e o tipo de atividade prática desejada.
+
+== Mantenha a validação humana
+
+A IA pode gerar respostas incompletas, imprecisas ou inadequadas ao contexto. Por isso, a revisão humana não é uma etapa opcional.
+
+. Confira fatos, números e referências.
+. Verifique se o conteúdo atende ao objetivo.
+. Ajuste linguagem, tom e nível de profundidade.
+. Proteja dados pessoais, estratégicos e confidenciais.
+
+IMPORTANT: Não envie informações sigilosas para ferramentas sem conhecer as regras de privacidade e segurança adotadas pela organização.
+
+== Transforme uso isolado em processo
+
+Depois de validar uma aplicação útil, registre o fluxo: entrada necessária, instrução utilizada, etapas de revisão e resultado esperado. Isso permite repetir, melhorar e compartilhar a prática com outras pessoas.
+
+== Competência é mais importante que dependência
+
+A melhor relação com a inteligência artificial é aquela que amplia a autonomia. O profissional continua responsável por compreender o problema, tomar decisões e avaliar consequências.
+
+A tecnologia se torna aliada quando reduz esforço operacional e libera tempo para análise, criatividade, colaboração e solução de problemas.
+
+== Próximo passo
+
+Escolha uma tarefa pequena e frequente. Descreva o resultado esperado, teste uma abordagem com IA e compare tempo, qualidade e riscos. Aprenda com o teste antes de ampliar o uso.

@@ -1,70 +1,42 @@
 [
   {
-    "id": "mentoria-carreira-tech",
+    "id": "carreira-tecnologia",
     "titulo": "Mentoria de Carreira em Tecnologia",
-    "modalidade": "Individual ou pequenos grupos",
-    "ciclo": "6 ou 10 encontros",
-    "publico": "Estudantes, iniciantes e profissionais em transição",
-    "resumo": "Orientação para definir objetivos, organizar estudos, construir portfólio e tomar decisões de carreira com mais clareza.",
-    "etapas": [
-      "Diagnóstico profissional",
-      "Objetivos e prioridades",
-      "Plano de desenvolvimento",
-      "Acompanhamento e feedback",
-      "Revisão de resultados"
-    ],
-    "imagem": "assets/images/mentorias.webp",
-    "destaque": true
+    "resumo": "Clareza de objetivos, competências prioritárias, plano de desenvolvimento e posicionamento profissional.",
+    "categoria": "Carreira",
+    "formato": "Individual ou grupo",
+    "duracao": "Ciclo de encontros",
+    "temas": ["Carreira", "Competências", "Plano de ação", "Portfólio"],
+    "imagem": "assets/img/mentorias.webp"
   },
   {
-    "id": "mentoria-ia-negocios",
-    "titulo": "Mentoria de IA Aplicada ao Negócio",
-    "modalidade": "Individual, liderança ou equipe",
-    "ciclo": "4 a 8 encontros",
-    "publico": "Empreendedores, gestores e profissionais",
-    "resumo": "Apoio para selecionar casos de uso, priorizar iniciativas e criar um plano seguro de adoção de inteligência artificial.",
-    "etapas": [
-      "Contexto e desafios",
-      "Mapa de oportunidades",
-      "Priorização",
-      "Prototipação",
-      "Plano de adoção"
-    ],
-    "imagem": "assets/images/hero-neduc.webp",
-    "destaque": true
+    "id": "ia-profissionais",
+    "titulo": "Mentoria de IA para Profissionais",
+    "resumo": "Acompanhamento para incorporar IA às rotinas com método, criticidade e responsabilidade.",
+    "categoria": "Tecnologia",
+    "formato": "Individual ou grupo",
+    "duracao": "Ciclo de encontros",
+    "temas": ["IA", "Produtividade", "Prompts", "Aplicação"],
+    "imagem": "assets/img/blog-ia.webp"
   },
   {
-    "id": "mentoria-lideranca",
-    "titulo": "Mentoria de Liderança e Gestão de Equipes",
-    "modalidade": "Individual",
-    "ciclo": "6 a 12 encontros",
-    "publico": "Líderes novos ou experientes",
-    "resumo": "Acompanhamento para fortalecer comunicação, delegação, feedback, tomada de decisão e desenvolvimento de pessoas.",
-    "etapas": [
-      "Perfil e contexto",
-      "Desafios prioritários",
-      "Práticas de liderança",
-      "Aplicação entre encontros",
-      "Avaliação da evolução"
-    ],
-    "imagem": "assets/images/lideranca.webp",
-    "destaque": false
+    "id": "lideranca",
+    "titulo": "Mentoria para Lideranças",
+    "resumo": "Desenvolvimento de comunicação, tomada de decisão, gestão de pessoas e condução de mudanças.",
+    "categoria": "Liderança",
+    "formato": "Individual ou grupo",
+    "duracao": "Ciclo de encontros",
+    "temas": ["Liderança", "Feedback", "Decisão", "Equipes"],
+    "imagem": "assets/img/quem-somos.webp"
   },
   {
-    "id": "mentoria-projetos-dados",
-    "titulo": "Mentoria para Projetos de Dados e Automação",
-    "modalidade": "Individual ou equipe de projeto",
-    "ciclo": "5 a 10 encontros",
-    "publico": "Analistas, desenvolvedores e equipes de inovação",
-    "resumo": "Orientação técnica e metodológica para transformar uma ideia em projeto viável, mensurável e apresentável.",
-    "etapas": [
-      "Problema e objetivos",
-      "Escopo e arquitetura",
-      "Plano de execução",
-      "Revisões técnicas",
-      "Apresentação de resultados"
-    ],
-    "imagem": "assets/images/dados.webp",
-    "destaque": false
+    "id": "projeto-aplicado",
+    "titulo": "Mentoria para Projeto Aplicado",
+    "resumo": "Orientação para planejar, desenvolver, documentar e apresentar um projeto prático.",
+    "categoria": "Tecnologia",
+    "formato": "Individual ou grupo",
+    "duracao": "Conforme o projeto",
+    "temas": ["Projeto", "Método", "Documentação", "Apresentação"],
+    "imagem": "assets/img/equipes.webp"
   }
 ]

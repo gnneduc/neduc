@@ -1,176 +1,74 @@
 [
   {
-    "id": "curso-ia-trabalho",
-    "slug": "inteligencia-artificial-aplicada-ao-trabalho",
-    "titulo": "Inteligência Artificial Aplicada ao Trabalho",
+    "id": "ia-produtividade",
+    "titulo": "Inteligência Artificial para Produtividade Profissional",
+    "resumo": "Aprenda a utilizar IA generativa com método, segurança e foco em tarefas reais do trabalho.",
     "categoria": "Inteligência Artificial",
-    "nivel": "Iniciante",
-    "cargaHoraria": "20 horas",
-    "formato": [
-      "On-line ao vivo",
-      "Presencial"
-    ],
-    "publico": "Profissionais, equipes e lideranças",
-    "resumo": "Aprenda a integrar IA generativa à rotina profissional com produtividade, segurança, pensamento crítico e aplicação prática.",
-    "resultados": [
-      "Criar prompts claros e reutilizáveis",
-      "Automatizar tarefas recorrentes",
-      "Analisar riscos, privacidade e qualidade",
-      "Construir um plano de adoção responsável"
-    ],
-    "modulos": [
-      "Fundamentos da IA generativa",
-      "Engenharia de prompts",
-      "Produtividade e automação",
-      "Ética, segurança e governança",
-      "Projeto aplicado"
-    ],
-    "destaque": true,
-    "imagem": "assets/images/dados.webp"
+    "nivel": "Introdutório",
+    "formato": "On-line ao vivo ou presencial",
+    "duracao": "12 horas",
+    "temas": ["IA generativa", "Prompts", "Produtividade", "Ética"],
+    "imagem": "assets/img/blog-ia.webp",
+    "status": "Turmas sob consulta"
   },
   {
-    "id": "curso-python-iniciantes",
-    "slug": "programacao-python-para-iniciantes",
-    "titulo": "Programação com Python para Iniciantes",
-    "categoria": "Programação",
+    "id": "fundamentos-programacao",
+    "titulo": "Fundamentos de Programação e Lógica",
+    "resumo": "Desenvolva raciocínio lógico e construa uma base sólida para iniciar em desenvolvimento de software.",
+    "categoria": "Tecnologia",
     "nivel": "Iniciante",
-    "cargaHoraria": "30 horas",
-    "formato": [
-      "On-line ao vivo",
-      "EaD"
-    ],
-    "publico": "Estudantes e profissionais em transição",
-    "resumo": "Uma jornada prática para desenvolver lógica, escrever programas e construir pequenos projetos com Python.",
-    "resultados": [
-      "Compreender lógica de programação",
-      "Usar estruturas de decisão e repetição",
-      "Organizar dados em coleções",
-      "Criar um projeto funcional"
-    ],
-    "modulos": [
-      "Ambiente e fundamentos",
-      "Variáveis e tipos",
-      "Decisões e repetições",
-      "Funções e coleções",
-      "Projeto final"
-    ],
-    "destaque": true,
-    "imagem": "assets/images/cursos.webp"
+    "formato": "On-line ao vivo",
+    "duracao": "24 horas",
+    "temas": ["Algoritmos", "Lógica", "JavaScript", "Projetos"],
+    "imagem": "assets/img/cursos.webp",
+    "status": "Turmas sob consulta"
   },
   {
-    "id": "curso-dados-decisoes",
-    "slug": "dados-para-tomada-de-decisao",
-    "titulo": "Dados para Tomada de Decisão",
+    "id": "dados-decisoes",
+    "titulo": "Dados para Decisões e Indicadores",
+    "resumo": "Organize, analise e comunique informações para apoiar decisões e acompanhar resultados.",
     "categoria": "Dados",
-    "nivel": "Intermediário",
-    "cargaHoraria": "24 horas",
-    "formato": [
-      "On-line ao vivo",
-      "Presencial"
-    ],
-    "publico": "Analistas, gestores e equipes de negócio",
-    "resumo": "Transforme dados em indicadores, narrativas e decisões mais claras por meio de análise aplicada e visualização.",
-    "resultados": [
-      "Definir perguntas de negócio",
-      "Preparar e analisar dados",
-      "Construir indicadores",
-      "Comunicar achados com clareza"
-    ],
-    "modulos": [
-      "Cultura orientada a dados",
-      "Qualidade e preparação",
-      "Indicadores e métricas",
-      "Visualização",
-      "Estudo de caso"
-    ],
-    "destaque": true,
-    "imagem": "assets/images/inovacao.webp"
+    "nivel": "Introdutório",
+    "formato": "Presencial ou on-line ao vivo",
+    "duracao": "16 horas",
+    "temas": ["Dados", "Indicadores", "Visualização", "Decisão"],
+    "imagem": "assets/img/metodologia.webp",
+    "status": "Turmas sob consulta"
   },
   {
-    "id": "curso-automacao-processos",
-    "slug": "automacao-de-processos-com-ia",
+    "id": "automacao-processos",
     "titulo": "Automação de Processos com IA",
-    "categoria": "Automação",
-    "nivel": "Intermediário",
-    "cargaHoraria": "24 horas",
-    "formato": [
-      "On-line ao vivo",
-      "Presencial"
-    ],
-    "publico": "Profissionais de operações, tecnologia e gestão",
-    "resumo": "Mapeie processos, identifique oportunidades e prototipe automações que reduzam retrabalho e aumentem a qualidade.",
-    "resultados": [
-      "Mapear fluxos e gargalos",
-      "Priorizar automações",
-      "Criar protótipos com IA",
-      "Medir ganhos e riscos"
-    ],
-    "modulos": [
-      "Mapeamento de processos",
-      "Critérios de priorização",
-      "Ferramentas de automação",
-      "Integrações e IA",
-      "Métricas de impacto"
-    ],
-    "destaque": false,
-    "imagem": "assets/images/hero-neduc.webp"
-  },
-  {
-    "id": "curso-lideranca-digital",
-    "slug": "lideranca-e-inovacao-digital",
-    "titulo": "Liderança e Inovação Digital",
-    "categoria": "Gestão",
-    "nivel": "Intermediário",
-    "cargaHoraria": "20 horas",
-    "formato": [
-      "Presencial",
-      "On-line ao vivo"
-    ],
-    "publico": "Líderes, coordenadores e gestores",
-    "resumo": "Fortaleça comunicação, tomada de decisão e condução de mudanças em ambientes impulsionados por tecnologia.",
-    "resultados": [
-      "Liderar mudanças com clareza",
-      "Criar ambientes colaborativos",
-      "Tomar decisões orientadas por evidências",
-      "Desenvolver equipes"
-    ],
-    "modulos": [
-      "Papel da liderança",
-      "Comunicação e confiança",
-      "Decisão e colaboração",
-      "Gestão da mudança",
-      "Plano de liderança"
-    ],
-    "destaque": false,
-    "imagem": "assets/images/lideranca.webp"
-  },
-  {
-    "id": "curso-prompt-engineering",
-    "slug": "fundamentos-de-prompt-engineering",
-    "titulo": "Fundamentos de Prompt Engineering",
+    "resumo": "Identifique oportunidades e desenhe automações simples para reduzir tarefas repetitivas.",
     "categoria": "Inteligência Artificial",
-    "nivel": "Iniciante",
-    "cargaHoraria": "12 horas",
-    "formato": [
-      "On-line ao vivo",
-      "EaD"
-    ],
-    "publico": "Pessoas que utilizam IA generativa no cotidiano",
-    "resumo": "Desenvolva instruções melhores, avalie respostas e crie bibliotecas de prompts para tarefas profissionais.",
-    "resultados": [
-      "Estruturar contexto e objetivo",
-      "Escolher exemplos e restrições",
-      "Avaliar respostas",
-      "Criar modelos reutilizáveis"
-    ],
-    "modulos": [
-      "Como modelos respondem",
-      "Estrutura de um bom prompt",
-      "Técnicas e exemplos",
-      "Avaliação",
-      "Biblioteca pessoal"
-    ],
-    "destaque": false,
-    "imagem": "assets/images/aprendizagem.webp"
+    "nivel": "Intermediário",
+    "formato": "On-line ao vivo",
+    "duracao": "16 horas",
+    "temas": ["Automação", "IA", "Processos", "Agentes"],
+    "imagem": "assets/img/equipes.webp",
+    "status": "Turmas sob consulta"
+  },
+  {
+    "id": "lideranca-inovacao",
+    "titulo": "Liderança, Inovação e Futuro do Trabalho",
+    "resumo": "Fortaleça comunicação, tomada de decisão, colaboração e adaptação em cenários de mudança.",
+    "categoria": "Gestão e Inovação",
+    "nivel": "Intermediário",
+    "formato": "Presencial ou on-line ao vivo",
+    "duracao": "12 horas",
+    "temas": ["Liderança", "Inovação", "Comunicação", "Mudança"],
+    "imagem": "assets/img/quem-somos.webp",
+    "status": "Turmas sob consulta"
+  },
+  {
+    "id": "projetos-tecnologia",
+    "titulo": "Projetos Práticos em Tecnologia",
+    "resumo": "Planeje, desenvolva e apresente uma solução tecnológica conectada a um problema real.",
+    "categoria": "Tecnologia",
+    "nivel": "Intermediário",
+    "formato": "Bootcamp",
+    "duracao": "20 horas",
+    "temas": ["Projetos", "Tecnologia", "Colaboração", "Portfólio"],
+    "imagem": "assets/img/hero-neduc.webp",
+    "status": "Turmas sob consulta"
   }
 ]
