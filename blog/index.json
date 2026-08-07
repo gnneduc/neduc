@@ -6,7 +6,11 @@
     "data": "2026-08-06",
     "tempoLeitura": "6 min de leitura",
     "categoria": "Inteligência Artificial",
-    "tags": ["IA", "Produtividade", "Trabalho"],
+    "tags": [
+      "IA",
+      "Produtividade",
+      "Trabalho"
+    ],
     "imagem": "assets/img/blog-ia.webp",
     "arquivo": "blog/2026/08/id_inteligencia-artificial-como-aliada_2026-08-06.asciidoc"
   },
@@ -17,7 +21,11 @@
     "data": "2026-07-22",
     "tempoLeitura": "5 min de leitura",
     "categoria": "Educação",
-    "tags": ["Aprendizagem", "Prática", "Competências"],
+    "tags": [
+      "Aprendizagem",
+      "Prática",
+      "Competências"
+    ],
     "imagem": "assets/img/cursos.webp",
     "arquivo": "blog/2026/07/id_aprendizagem-aplicada_2026-07-22.asciidoc"
   },
@@ -28,7 +36,11 @@
     "data": "2026-06-18",
     "tempoLeitura": "7 min de leitura",
     "categoria": "Liderança",
-    "tags": ["Liderança", "Futuro do trabalho", "Equipes"],
+    "tags": [
+      "Liderança",
+      "Futuro do trabalho",
+      "Equipes"
+    ],
     "imagem": "assets/img/quem-somos.webp",
     "arquivo": "blog/2026/06/id_lideranca-futuro-trabalho_2026-06-18.asciidoc"
   }
