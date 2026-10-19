@@ -1,130 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta
-      content="Neduc — Núcleo de Educação de Competências. Cursos, treinamentos e mentorias em tecnologia, inteligência artificial, dados, gestão e inovação."
-      name="description" />
-    <meta content="#17243d" name="theme-color" />
-    <meta content="light" name="color-scheme" />
-    <meta content="website" property="og:type" />
-    <meta content="pt_BR" property="og:locale" />
-    <meta content="Neduc — Núcleo de Educação de competências para o futuro do trabalho" property="og:title" />
-    <meta content="Conhecimento aplicado para pessoas, equipes e organizações." property="og:description" />
-    <meta content="assets/img/hero-neduc.webp" property="og:image" />
-    <link href="/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png" />
-    <link href="/assets/img/favicon/favicon.svg" rel="icon" type="image/svg+xml" />
-    <link href="/assets/img/favicon/favicon.ico" rel="shortcut icon" />
-    <link href="/assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
-    <meta content="Neduc" name="apple-mobile-web-app-title" />
-    <link href="/assets/img/favicon/site.webmanifest" rel="manifest" />
-    <title>Neduc — Núcleo de Educação de Competências</title>
-    <link href="/assets/css/styles.css" rel="stylesheet" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "EducationalOrganization",
-        "name": "Neduc — Núcleo de Educação de Competências",
-        "description": "Cursos, treinamentos, mentorias e soluções educacionais práticas em tecnologia, inteligência artificial, dados, gestão e inovação.",
-        "email": "contato@neduc.com.br",
-        "telephone": "+55-41-99651-4289",
-        "sameAs": ["https://www.instagram.com/neduc_oficial"]
-      }
-    </script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Neduc — Núcleo de Educação e Competências. Cursos, treinamentos e mentorias em tecnologia, inteligência artificial, dados, gestão e inovação.">
+  <meta name="theme-color" content="#17243d">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Neduc — Educação e competências para o futuro do trabalho">
+  <meta property="og:description" content="Conhecimento aplicado para pessoas, equipes e organizações.">
+  <meta property="og:image" content="assets/img/hero-neduc.webp">
+  <title>Neduc — Núcleo de Educação e Competências</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Neduc — Núcleo de Educação e Competências",
+    "description": "Cursos, treinamentos, mentorias e soluções educacionais práticas em tecnologia, inteligência artificial, dados, gestão e inovação.",
+    "email": "contato@neduc.com.br",
+    "telephone": "+55-41-99651-4289",
+    "sameAs": ["https://www.instagram.com/neduc_oficial"]
+  }
+  </script>
+</head>
 
-  <body>
-    <a class="skip-link" data-content-text="index.texts.t001" href="#conteudo-principal"></a>
-    <header class="site-header" id="topo">
-      <div aria-label="Informações rápidas" class="utility-bar">
-        <div class="container utility-bar__content">
-          <span data-content-text="index.texts.t002"></span>
-          <a data-content-text="index.texts.t003" href="mailto:contato@neduc.com.br"></a>
-        </div>
+<body>
+  <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header class="site-header" id="topo">
+    <div class="utility-bar" aria-label="Informações rápidas">
+      <div class="container utility-bar__content">
+        <span>Aprendizagem aplicada para pessoas e organizações</span>
+        <a href="mailto:contato@neduc.com.br">contato@neduc.com.br</a>
       </div>
-      <div class="container header-main">
-        <a aria-label="Neduc — ir para o início" class="brand" href="#/inicio">
-          <span aria-hidden="true" class="brand__symbol" data-content-text="index.texts.t004"></span>
-          <span class="brand__text"><strong data-content-text="index.texts.t005"></strong><small
-              data-content-text="index.texts.t006"></small></span>
+    </div>
+
+    <div class="container header-main">
+      <a class="brand" href="#/inicio" aria-label="Neduc — ir para o início">
+        <span class="brand__symbol" aria-hidden="true">N</span>
+        <span class="brand__text"><strong>Neduc</strong><small>Núcleo de Educação e Competências</small></span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu principal</span>
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+        <a href="#/inicio" data-route="inicio">Início</a>
+        <a href="#/quem-somos" data-route="quem-somos">Quem somos</a>
+        <a href="#/cursos" data-route="cursos">Cursos</a>
+        <a href="#/treinamentos" data-route="treinamentos">Treinamentos</a>
+        <a href="#/mentorias" data-route="mentorias">Mentorias</a>
+        <a href="#/blog" data-route="blog">Blog</a>
+        <a class="button button--small" href="#/contato" data-route="contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo-principal" tabindex="-1">
+    <div class="route-loading" role="status" aria-live="polite">
+      <span class="loader" aria-hidden="true"></span> Carregando conteúdo…
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand--footer" href="#/inicio" aria-label="Neduc — início">
+          <span class="brand__symbol" aria-hidden="true">N</span>
+          <span class="brand__text"><strong>Neduc</strong><small>Núcleo de Educação e Competências</small></span>
         </a>
-        <button aria-controls="menu-principal" aria-expanded="false" class="menu-button" type="button">
-          <span class="sr-only" data-content-text="index.texts.t007"></span>
-          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-        </button>
-        <nav aria-label="Menu principal" class="main-nav" id="menu-principal">
-          <a data-content-text="index.texts.t008" data-route="inicio" href="#/inicio"></a>
-          <a data-content-text="index.texts.t009" data-route="quem-somos" href="#/quem-somos"></a>
-          <a data-content-text="index.texts.t010" data-route="cursos" href="#/cursos"></a>
-          <a data-content-text="index.texts.t011" data-route="treinamentos" href="#/treinamentos"></a>
-          <a data-content-text="index.texts.t012" data-route="mentorias" href="#/mentorias"></a>
-          <a data-content-text="index.texts.t013" data-route="blog" href="#/blog"></a>
-          <a class="button button--small" data-content-text="index.texts.t014" data-route="contato"
-            href="#/contato"></a>
-        </nav>
+        <p>Treinamento que capacita. Mentoria que orienta. Futuro que se constrói.</p>
       </div>
-    </header>
-    <main id="conteudo-principal" tabindex="-1">
-      <div aria-live="polite" class="route-loading" role="status">
-        <span aria-hidden="true" class="loader"></span><span data-content-text="index.texts.t015"></span>
+      <div>
+        <h2 class="footer-heading">Navegação</h2>
+        <ul class="footer-links">
+          <li><a href="#/quem-somos">Quem somos</a></li>
+          <li><a href="#/cursos">Cursos</a></li>
+          <li><a href="#/treinamentos">Treinamentos</a></li>
+          <li><a href="#/mentorias">Mentorias</a></li>
+          <li><a href="#/blog">Blog</a></li>
+        </ul>
       </div>
-    </main>
-    <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a aria-label="Neduc — início" class="brand brand--footer" href="#/inicio">
-            <span aria-hidden="true" class="brand__symbol" data-content-text="index.texts.t016"></span>
-            <span class="brand__text"><strong data-content-text="index.texts.t017"></strong><small
-                data-content-text="index.texts.t018"></small></span>
-          </a>
-          <p data-content-text="index.texts.t019"></p>
-        </div>
-        <div>
-          <h2 class="footer-heading" data-content-text="index.texts.t020"></h2>
-          <ul class="footer-links">
-            <li><a data-content-text="index.texts.t021" href="#/quem-somos"></a></li>
-            <li><a data-content-text="index.texts.t022" href="#/cursos"></a></li>
-            <li><a data-content-text="index.texts.t023" href="#/treinamentos"></a></li>
-            <li><a data-content-text="index.texts.t024" href="#/mentorias"></a></li>
-            <li><a data-content-text="index.texts.t025" href="#/blog"></a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="footer-heading" data-content-text="index.texts.t026"></h2>
-          <address>
-            <a data-content-text="index.texts.t027" href="mailto:contato@neduc.com.br"></a><br />
-            <a data-content-text="index.texts.t028" href="tel:+5541996514289"></a><br />
-            <a data-content-text="index.texts.t029" href="https://www.instagram.com/neduc_oficial"
-              rel="noopener noreferrer"></a>
-          </address>
-        </div>
-        <div>
-          <h2 class="footer-heading" data-content-text="index.texts.t030"></h2>
-          <form class="newsletter-form" id="newsletter-form">
-            <label data-content-text="index.texts.t031" for="newsletter-email"></label>
-            <div class="inline-form">
-              <input autocomplete="email" data-content-placeholder="index.placeholders.p001" id="newsletter-email"
-                name="email" placeholder="" required="" type="email" />
-              <button class="button button--light" data-content-text="index.texts.t032" type="submit"></button>
-            </div>
-            <p aria-live="polite" class="form-feedback"></p>
-          </form>
-        </div>
+      <div>
+        <h2 class="footer-heading">Contato</h2>
+        <address>
+          <a href="mailto:contato@neduc.com.br">contato@neduc.com.br</a><br>
+          <a href="tel:+5541996514289">(41) 9 9651-4289</a><br>
+          <a href="https://www.instagram.com/neduc_oficial" rel="noopener noreferrer">@neduc_oficial</a>
+        </address>
       </div>
-      <div class="container footer-bottom">
-        <p>© <span id="ano-atual"></span><span data-content-text="index.texts.t033"></span></p>
-        <p><a data-content-text="index.texts.t034" href="#/acessibilidade"></a> · <a
-            data-content-text="index.texts.t035" href="#/privacidade"></a></p>
+      <div>
+        <h2 class="footer-heading">Receba novidades</h2>
+        <form class="newsletter-form" id="newsletter-form">
+          <label for="newsletter-email">Seu melhor e-mail</label>
+          <div class="inline-form">
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" required
+              placeholder="nome@exemplo.com">
+            <button class="button button--light" type="submit">Cadastrar</button>
+          </div>
+          <p class="form-feedback" aria-live="polite"></p>
+        </form>
       </div>
-    </footer>
-    <noscript>
-      <div class="noscript">Este site utiliza JavaScript para navegar entre as páginas e carregar os conteúdos em JSON e
-        AsciiDoc.</div>
-    </noscript>
-    <script src="assets/js/content-loader.js" type="module"></script>
-    <script src="assets/js/app.js" type="module"></script>
-  </body>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="ano-atual"></span> Neduc. Todos os direitos reservados.</p>
+      <p><a href="#/acessibilidade">Acessibilidade</a> · <a href="#/privacidade">Privacidade</a></p>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript">Este site utiliza JavaScript para navegar entre as páginas e carregar os conteúdos em JSON e
+      AsciiDoc.</div>
+  </noscript>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
 
 </html>
