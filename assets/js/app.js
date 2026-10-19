@@ -18,6 +18,79 @@ const routes = {
   'privacidade': { partial: 'pages/privacidade.html', title: 'Privacidade | Neduc' }
 };
 
+// Dados institucionais: fonte única e cache de requisição.
+const DADOS_NEDUC_URL = 'assets/data/dados-neduc.json';
+let dadosNeducPromise;
+
+function carregarDadosNeduc() {
+  if (!dadosNeducPromise) {
+    dadosNeducPromise = fetchJson(DADOS_NEDUC_URL).catch(error => {
+      dadosNeducPromise = null; // permite nova tentativa após falha de rede
+      throw error;
+    });
+  }
+  return dadosNeducPromise;
+}
+
+function valorPorCaminho(objeto, caminho) {
+  return caminho.split('.').reduce((atual, chave) => atual?.[chave], objeto);
+}
+
+// Aplicado ao rodapé fixo e novamente após injetar cada página no roteador.
+function preencherDadosInstitucionais(raiz, dados) {
+  const mapeamento = {
+    'empresa-cnpj': 'empresa.cnpj',
+    'empresa-razao-social': 'empresa.razao_social',
+    'empresa-nome': 'marca_site.nome',
+    'empresa-email': 'marca_site.email_contato',
+    'empresa-telefone': 'marca_site.telefone.exibicao',
+    'empresa-missao': 'institucional.missao',
+    'empresa-visao': 'institucional.visao'
+  };
+
+  for (const [id, caminho] of Object.entries(mapeamento)) {
+    const elemento = raiz.querySelector(`#${id}`);
+    const valor = valorPorCaminho(dados, caminho);
+    if (elemento && valor != null && typeof valor !== 'object') {
+      elemento.textContent = String(valor);
+    }
+  }
+
+  raiz.querySelectorAll('[data-neduc]').forEach(elemento => {
+    const valor = valorPorCaminho(dados, elemento.dataset.neduc);
+    if (valor != null && typeof valor !== 'object') {
+      elemento.textContent = String(valor); // evita inserir HTML vindo do JSON
+    }
+  });
+
+  const email = dados.marca_site?.email_contato;
+  const telefone = dados.marca_site?.telefone;
+  raiz.querySelectorAll('[data-neduc-email-link]').forEach(elemento => {
+    if (email) {
+      elemento.href = `mailto:${email}`;
+      elemento.textContent = email;
+    }
+  });
+  raiz.querySelectorAll('[data-neduc-telefone-link]').forEach(elemento => {
+    if (telefone?.href) elemento.href = telefone.href;
+    if (telefone?.exibicao) elemento.textContent = telefone.exibicao;
+  });
+  raiz.querySelectorAll('[data-neduc-instagram-link]').forEach(elemento => {
+    const instagram = dados.marca_site?.redes_sociais?.instagram;
+    if (instagram?.url) elemento.href = instagram.url;
+    if (instagram?.usuario) elemento.textContent = instagram.usuario;
+  });
+}
+
+async function sincronizarDadosInstitucionais(raiz = document) {
+  try {
+    preencherDadosInstitucionais(raiz, await carregarDadosNeduc());
+  } catch (error) {
+    // Dados institucionais são opcionais para a navegação continuar funcionando.
+    console.warn('Não foi possível atualizar os dados institucionais:', error);
+  }
+}
+
 function parseRoute() {
   const hash = window.location.hash.replace(/^#\/?/, '');
   const [path = 'inicio', queryString = ''] = hash.split('?');
@@ -57,6 +130,9 @@ async function navigate() {
       setActiveNav(route in routes ? route : 'inicio');
       if (config.init) await config.init(params);
     }
+
+    // A página atual já foi renderizada: agora os marcadores estão no DOM.
+    await sincronizarDadosInstitucionais(main);
 
     main.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: 'auto' });
@@ -229,4 +305,7 @@ newsletter.addEventListener('submit', event => {
 
 document.querySelector('#ano-atual').textContent = new Date().getFullYear();
 window.addEventListener('hashchange', navigate);
-window.addEventListener('DOMContentLoaded', navigate);
+window.addEventListener('DOMContentLoaded', () => {
+  void sincronizarDadosInstitucionais(document);
+  void navigate();
+});

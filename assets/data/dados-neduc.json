@@ -1,0 +1,813 @@
+{
+  "metadados": {
+    "versao": "2.0.0",
+    "data_organizacao": "2026-10-19",
+    "fontes": {
+      "cnpj": "62.882.053/0001-30",
+      "paginas_html": [
+        "acessibilidade.html",
+        "artigo.html",
+        "blog.html",
+        "contato.html",
+        "cursos.html",
+        "index.html",
+        "inicio.html",
+        "mentorias.html",
+        "privacidade.html",
+        "quem-somos.html",
+        "treinamentos.html"
+      ],
+      "dados_anteriores": "dados-neduc.json (dados derivados dos mesmos arquivos e da conversa)"
+    },
+    "observacao": "Dados cadastrais transcritos do comprovante emitido em 2025; situação atual não consultada. Campos null exigem confirmação.",
+    "escopo": "Consolidação dos dados cadastrais do PDF e dos 11 documentos HTML enviados",
+    "criterio": "Campos factuais extraídos dos arquivos; conteúdo publicado no site é registrado como declaração do site e não como fato verificado externamente.",
+    "atualizacao_cadastro_na_receita_confirmada": false
+  },
+  "empresa": {
+    "razao_social": "RODRIGO DA SILVA DO NASCIMENTO LTDA",
+    "nome_fantasia_registrado": "NASCIMENTO EDUCACAO, CONSULTORIA E TECNOLOGIA",
+    "cnpj": "62.882.053/0001-30",
+    "cnpj_numerico": "62882053000130",
+    "data_abertura": "2025-09-24",
+    "matriz": true,
+    "porte": {
+      "sigla": "ME",
+      "descricao": "Microempresa"
+    },
+    "natureza_juridica": {
+      "codigo": "206-2",
+      "descricao": "Sociedade Empresária Limitada"
+    },
+    "situacao_cadastral": {
+      "situacao_no_comprovante": "ATIVA",
+      "data": "2025-09-24"
+    },
+    "atividade_principal": {
+      "cnae": "85.50-3-02",
+      "descricao": "Atividades de apoio à educação, exceto caixas escolares"
+    },
+    "atividades_secundarias": [
+      {
+        "cnae": "62.01-5-01",
+        "descricao": "Desenvolvimento de programas de computador sob encomenda"
+      },
+      {
+        "cnae": "62.01-5-02",
+        "descricao": "Web design"
+      },
+      {
+        "cnae": "62.02-3-00",
+        "descricao": "Desenvolvimento e licenciamento de programas de computador customizáveis"
+      },
+      {
+        "cnae": "62.03-1-00",
+        "descricao": "Desenvolvimento e licenciamento de programas de computador não-customizáveis"
+      },
+      {
+        "cnae": "62.04-0-00",
+        "descricao": "Consultoria em tecnologia da informação"
+      },
+      {
+        "cnae": "62.09-1-00",
+        "descricao": "Suporte técnico, manutenção e outros serviços em tecnologia da informação"
+      },
+      {
+        "cnae": "63.11-9-00",
+        "descricao": "Tratamento de dados, provedores de serviços de aplicação e serviços de hospedagem na internet"
+      },
+      {
+        "cnae": "63.19-4-00",
+        "descricao": "Portais, provedores de conteúdo e outros serviços de informação na internet"
+      },
+      {
+        "cnae": "72.10-0-00",
+        "descricao": "Pesquisa e desenvolvimento experimental em ciências físicas e naturais"
+      },
+      {
+        "cnae": "74.90-1-99",
+        "descricao": "Outras atividades profissionais, científicas e técnicas não especificadas anteriormente"
+      },
+      {
+        "cnae": "85.99-6-03",
+        "descricao": "Treinamento em informática"
+      },
+      {
+        "cnae": "90.02-7-01",
+        "descricao": "Atividades de artistas plásticos, jornalistas independentes e escritores"
+      }
+    ],
+    "endereco_cadastral": {
+      "logradouro": "AV JOÃO GUALBERTO",
+      "numero": "1342",
+      "complemento": "SALA 505 ANDAR 05 COND URBAN OFFICE E HOTELBLOCO URBAN OFFICE CURITIB",
+      "bairro": "ALTO DA GLÓRIA",
+      "municipio": "CURITIBA",
+      "uf": "PR",
+      "cep": "80.030-000",
+      "pais": "Brasil",
+      "observacao": "Complemento transcrito como aparece no PDF; conferir grafia e possível truncamento."
+    },
+    "contato_cadastral": {
+      "email": "MEUCNPJ@CONTABILIZEI.COM.BR",
+      "telefone_informado": "(41) 9813-0414",
+      "outro_telefone_exibido": "(0000) 0000-0000",
+      "observacao": "O número do comprovante é distinto do número do site; o outro telefone (0000) é inválido e não deve ser usado."
+    }
+  },
+  "marca_site": {
+    "nome": "Neduc",
+    "nome_extenso": "Núcleo de Educação e Competências",
+    "frase": "Treinamento que capacita. Mentoria que orienta. Futuro que se constrói.",
+    "email_contato": "contato@neduc.com.br",
+    "telefone": {
+      "exibicao": "(41) 9 9651-4289",
+      "e164": "+5541996514289",
+      "href": "tel:+5541996514289"
+    },
+    "redes_sociais": {
+      "instagram": {
+        "usuario": "@neduc_oficial",
+        "url": "https://www.instagram.com/neduc_oficial/"
+      },
+      "facebook": null,
+      "linkedin": null,
+      "youtube": null
+    },
+    "rotas": {
+      "inicio": "#/inicio",
+      "quem_somos": "#/quem-somos",
+      "cursos": "#/cursos",
+      "treinamentos": "#/treinamentos",
+      "mentorias": "#/mentorias",
+      "blog": "#/blog",
+      "acessibilidade": "#/acessibilidade",
+      "privacidade": "#/privacidade",
+      "contato": "#/contato",
+      "artigo": "#/artigo (padrão de rota a confirmar)"
+    },
+    "dominio_oficial": null,
+    "observacao": "Nome e contatos usados no site, fornecidos na conversa; não constam no comprovante CNPJ.",
+    "descricao_seo": "Neduc — Núcleo de Educação e Competências. Cursos, treinamentos e mentorias em tecnologia, inteligência artificial, dados, gestão e inovação.",
+    "titulo_html": "Neduc — Núcleo de Educação e Competências",
+    "tema_cor": "#17243d",
+    "idioma": "pt-BR",
+    "logo_texto": "N",
+    "favicon": "assets/img/favicon.svg",
+    "imagem_compartilhamento": "assets/img/hero-neduc.webp",
+    "folha_estilos": "assets/css/styles.css",
+    "javascript_principal": "assets/js/app.js",
+    "tipo_schema_org": "EducationalOrganization",
+    "frase_utility_bar": "Aprendizagem aplicada para pessoas e organizações",
+    "frase_principal_home": "Conhecimento que se transforma em competência.",
+    "frase_proposta": "Aprender, aplicar e evoluir com propósito.",
+    "redes_sociais_observacao": "Facebook, LinkedIn e YouTube aparecem no footer com href=\"#\"; não possuem URLs oficiais informadas."
+  },
+  "privacidade_lgpd": {
+    "controlador": {
+      "razao_social": "RODRIGO DA SILVA DO NASCIMENTO LTDA",
+      "cnpj": "62.882.053/0001-30",
+      "confirmar_vinculo_com_site": true
+    },
+    "email_privacidade": null,
+    "encarregado_ou_canal_responsavel": null,
+    "data_vigencia_politica": null,
+    "tipos_dados_coletados": null,
+    "finalidades_tratamento": null,
+    "bases_legais_por_finalidade": null,
+    "cookies_e_tecnologias": null,
+    "prestadores_e_compartilhamento": null,
+    "transferencia_internacional": null,
+    "prazos_retencao": null,
+    "medidas_seguranca": null,
+    "procedimento_direitos_titulares": null,
+    "tratamento_dados_menores": null,
+    "observacao": "As declarações do site não comprovam o comportamento de scripts, hospedagem ou provedores ausentes dos anexos. Confirmar antes de publicar.",
+    "politica_atual_do_site": {
+      "arquivo": "privacidade.html",
+      "declara_formulario_mailto": true,
+      "declara_newsletter_demonstrativa": true,
+      "declara_site_estatico_sem_banco_e_rastreamento_por_padrao": true,
+      "cita_github_pages_como_possibilidade": true,
+      "revisao_juridica_exigida_pelo_texto": true
+    },
+    "praticas_reais_de_tratamento_verificadas": false,
+    "referencia_normativa": "Lei nº 13.709/2018 (LGPD)"
+  },
+  "institucional": {
+    "missao": "Promover o desenvolvimento de pessoas e organizações por meio de mentorias, treinamentos e soluções educacionais práticas em tecnologia, inteligência artificial, gestão e inovação.",
+    "visao": "Ser referência em treinamentos, mentorias e capacitação profissional, preparando pessoas, equipes e organizações para os desafios e as oportunidades do futuro do trabalho.",
+    "valores": [
+      "Ética",
+      "Inovação",
+      "Inclusão",
+      "Colaboração",
+      "Qualidade",
+      "Aprendizado contínuo",
+      "Compromisso com resultados reais"
+    ],
+    "areas_de_atuacao": [
+      {
+        "nome": "Educação",
+        "descricao": "Cursos, treinamentos e mentorias para transformar conhecimento em competências aplicáveis."
+      },
+      {
+        "nome": "Tecnologia",
+        "descricao": "Inteligência artificial, programação, dados e automação para melhorar processos e produtividade."
+      },
+      {
+        "nome": "Consultoria",
+        "descricao": "Diagnóstico e implementação de soluções educacionais, tecnológicas e inovadoras para organizações."
+      }
+    ],
+    "publicos": [
+      "Estudantes e iniciantes",
+      "Profissionais em evolução",
+      "Equipes e lideranças",
+      "Empresas e organizações"
+    ],
+    "diferenciais": [
+      "Aprendizagem aplicada",
+      "Mentoria próxima",
+      "Soluções sob medida",
+      "Resultados mensuráveis"
+    ],
+    "temas": [
+      "Tecnologia",
+      "Inteligência artificial",
+      "Dados",
+      "Gestão",
+      "Inovação",
+      "Programação",
+      "Automação",
+      "Carreira",
+      "Liderança"
+    ],
+    "modalidades": [
+      "Presencial",
+      "On-line ao vivo",
+      "EaD"
+    ],
+    "metodologia": [
+      {
+        "ordem": 1,
+        "nome": "Diagnosticar",
+        "descricao": "Identificar necessidades, objetivos e desafios."
+      },
+      {
+        "ordem": 2,
+        "nome": "Planejar",
+        "descricao": "Definir competências, conteúdos, trilha e metas."
+      },
+      {
+        "ordem": 3,
+        "nome": "Aprender e aplicar",
+        "descricao": "Combinar teoria, prática, casos e projetos."
+      },
+      {
+        "ordem": 4,
+        "nome": "Acompanhar e ajustar",
+        "descricao": "Oferecer mentoria, orientação e feedback."
+      },
+      {
+        "ordem": 5,
+        "nome": "Medir e evoluir",
+        "descricao": "Avaliar aprendizagem, aplicação e resultados."
+      }
+    ]
+  },
+  "servicos": {
+    "cursos": {
+      "descricao": "Conteúdos estruturados com teoria, prática e atividades para desenvolver competências atuais.",
+      "modalidades": [
+        "Presencial",
+        "On-line ao vivo",
+        "EaD"
+      ],
+      "filtros": [
+        "Inteligência Artificial",
+        "Tecnologia",
+        "Dados",
+        "Gestão e Inovação"
+      ],
+      "catalogo_detalhado_disponivel_nos_arquivos": false
+    },
+    "treinamentos": {
+      "descricao": "Capacitações personalizadas para equipes, lideranças e organizações, inclusive in company.",
+      "formatos": [
+        "Presencial",
+        "On-line ao vivo",
+        "Combinado"
+      ],
+      "experiencias": [
+        "Workshops",
+        "Bootcamps",
+        "Hackathons",
+        "Masterclasses"
+      ],
+      "filtros": [
+        "Tecnologia",
+        "Liderança",
+        "Inovação"
+      ],
+      "catalogo_detalhado_disponivel_nos_arquivos": false
+    },
+    "mentorias": {
+      "descricao": "Acompanhamento individual ou em grupo, com metas, plano de ação, orientação e feedback.",
+      "etapas": [
+        "Diagnóstico",
+        "Plano de ação",
+        "Acompanhamento",
+        "Evolução"
+      ],
+      "filtros": [
+        "Carreira",
+        "Tecnologia",
+        "Liderança"
+      ],
+      "catalogo_detalhado_disponivel_nos_arquivos": false
+    },
+    "trilhas": {
+      "descricao": "Percursos contínuos que combinam conteúdos, práticas e metas alinhadas às necessidades.",
+      "catalogo_detalhado_disponivel_nos_arquivos": false
+    }
+  },
+  "site": {
+    "tipo": "site institucional estático com navegação por hash e carregamento dinâmico",
+    "roteamento": "hash",
+    "paginas": {
+      "inicio": {
+        "arquivo": "inicio.html",
+        "rota": "#/inicio",
+        "descricao_pagina": "Neduc: cursos, treinamentos e mentorias para desenvolver competências aplicáveis em tecnologia, inteligência artificial, dados, gestão e inovação.",
+        "titulos_principais": [
+          "Conhecimento que se transforma em competência."
+        ],
+        "subtitulos": [
+          "Aprender, aplicar e evoluir com propósito.",
+          "Uma jornada para cada objetivo.",
+          "Competências para desafios reais.",
+          "Da necessidade ao resultado.",
+          "Ideias para aprender e aplicar.",
+          "Vamos construir uma jornada de desenvolvimento?"
+        ],
+        "titulos_terciarios": [
+          "Cursos",
+          "Treinamentos",
+          "Mentorias",
+          "Trilhas",
+          "Diagnosticar",
+          "Planejar",
+          "Aprender e aplicar",
+          "Acompanhar e ajustar",
+          "Medir e evoluir"
+        ],
+        "links_internos": [
+          "#/blog",
+          "#/contato",
+          "#/cursos",
+          "#/mentorias",
+          "#/quem-somos",
+          "#/treinamentos"
+        ],
+        "imagens": [
+          {
+            "src": "assets/img/hero-neduc.webp",
+            "alt": "Profissionais reunidos em uma experiência de aprendizagem com recursos digitais",
+            "width": "1600",
+            "height": "900"
+          },
+          {
+            "src": "assets/img/quem-somos.webp",
+            "alt": "Equipe colaborando durante uma atividade de desenvolvimento profissional",
+            "width": "1600",
+            "height": "900"
+          }
+        ],
+        "formularios": [],
+        "faq": []
+      },
+      "quem-somos": {
+        "arquivo": "quem-somos.html",
+        "rota": "#/quem-somos",
+        "descricao_pagina": "Conheça a Neduc, sua missão, visão, valores, áreas de atuação, metodologia e públicos atendidos.",
+        "titulos_principais": [
+          "Educação que aproxima conhecimento e realidade."
+        ],
+        "subtitulos": [
+          "Conhecimento aplicado para pessoas e organizações.",
+          "Missão",
+          "Visão",
+          "Valores",
+          "Três frentes que se complementam.",
+          "Prática, proximidade e evolução mensurável.",
+          "Desenvolvimento em diferentes momentos.",
+          "Treinamento que capacita. Mentoria que orienta. Futuro que se constrói."
+        ],
+        "titulos_terciarios": [
+          "Educação",
+          "Tecnologia",
+          "Consultoria",
+          "Aprendizagem aplicada",
+          "Mentoria próxima",
+          "Soluções sob medida",
+          "Resultados mensuráveis",
+          "Estudantes e iniciantes",
+          "Profissionais em evolução",
+          "Equipes e lideranças",
+          "Empresas e organizações"
+        ],
+        "links_internos": [
+          "#/contato",
+          "#/inicio"
+        ],
+        "imagens": [
+          {
+            "src": "assets/img/quem-somos.webp",
+            "alt": "Profissionais colaborando em uma reunião de aprendizagem",
+            "width": "1600",
+            "height": "900"
+          },
+          {
+            "src": "assets/img/metodologia.webp",
+            "alt": "Profissional apresentando indicadores para uma equipe",
+            "width": "1600",
+            "height": "900"
+          }
+        ],
+        "formularios": [],
+        "faq": []
+      },
+      "cursos": {
+        "arquivo": "cursos.html",
+        "rota": "#/cursos",
+        "descricao_pagina": "Cursos Neduc em inteligência artificial, programação, dados, automação, gestão e inovação.",
+        "titulos_principais": [
+          "Cursos para aprender e aplicar."
+        ],
+        "subtitulos": [
+          "Aprenda do seu jeito.",
+          "Não encontrou o curso ideal?"
+        ],
+        "titulos_terciarios": [
+          "Presencial",
+          "On-line ao vivo",
+          "EaD"
+        ],
+        "links_internos": [
+          "#/contato",
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [],
+        "faq": []
+      },
+      "treinamentos": {
+        "arquivo": "treinamentos.html",
+        "rota": "#/treinamentos",
+        "descricao_pagina": "Treinamentos corporativos e in company da Neduc para equipes, lideranças e organizações.",
+        "titulos_principais": [
+          "Treinamentos conectados ao contexto do negócio."
+        ],
+        "subtitulos": [
+          "Aprendizagem alinhada aos desafios da equipe.",
+          "Formatos que mobilizam a participação.",
+          "Desenvolva uma solução sob medida."
+        ],
+        "titulos_terciarios": [
+          "Workshops",
+          "Bootcamps",
+          "Hackathons e masterclasses"
+        ],
+        "links_internos": [
+          "#/contato",
+          "#/inicio"
+        ],
+        "imagens": [
+          {
+            "src": "assets/img/treinamentos.webp",
+            "alt": "Treinamento corporativo com profissionais em uma sala de apresentação",
+            "width": "1600",
+            "height": "900"
+          }
+        ],
+        "formularios": [],
+        "faq": []
+      },
+      "mentorias": {
+        "arquivo": "mentorias.html",
+        "rota": "#/mentorias",
+        "descricao_pagina": "Mentorias Neduc com acompanhamento, metas, plano de ação, orientação aplicada e feedback.",
+        "titulos_principais": [
+          "Mentoria para avançar com clareza e autonomia."
+        ],
+        "subtitulos": [
+          "Orientação conectada ao seu momento.",
+          "Um processo simples e acompanhado.",
+          "Transforme objetivo em plano de desenvolvimento."
+        ],
+        "titulos_terciarios": [
+          "Diagnóstico",
+          "Plano de ação",
+          "Acompanhamento",
+          "Evolução"
+        ],
+        "links_internos": [
+          "#/contato",
+          "#/inicio"
+        ],
+        "imagens": [
+          {
+            "src": "assets/img/mentorias.webp",
+            "alt": "Profissionais conversando durante uma sessão de mentoria",
+            "width": "1600",
+            "height": "900"
+          }
+        ],
+        "formularios": [],
+        "faq": []
+      },
+      "blog": {
+        "arquivo": "blog.html",
+        "rota": "#/blog",
+        "descricao_pagina": "Blog Neduc: artigos sobre inteligência artificial, tecnologia, dados, carreira, gestão e inovação.",
+        "titulos_principais": [
+          "Ideias, práticas e tendências para o futuro do trabalho."
+        ],
+        "subtitulos": [
+          "Aprendizado contínuo começa com uma boa pergunta."
+        ],
+        "titulos_terciarios": [],
+        "links_internos": [
+          "#/cursos",
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [],
+        "faq": []
+      },
+      "artigo": {
+        "arquivo": "artigo.html",
+        "rota": null,
+        "descricao_pagina": null,
+        "titulos_principais": [
+          "Carregando artigo…"
+        ],
+        "subtitulos": [
+          "Leve o tema para a prática."
+        ],
+        "titulos_terciarios": [],
+        "links_internos": [
+          "#/blog",
+          "#/cursos",
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [],
+        "faq": []
+      },
+      "contato": {
+        "arquivo": "contato.html",
+        "rota": "#/contato",
+        "descricao_pagina": "Entre em contato com a Neduc para cursos, treinamentos, mentorias e soluções personalizadas.",
+        "titulos_principais": [
+          "Vamos conversar sobre desenvolvimento?"
+        ],
+        "subtitulos": [
+          "Comece por aqui."
+        ],
+        "titulos_terciarios": [],
+        "links_internos": [
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [
+          {
+            "id": "contato-form",
+            "campos": [
+              {
+                "id": "nome",
+                "name": "nome",
+                "tipo": "input",
+                "obrigatorio": true,
+                "opcoes": null
+              },
+              {
+                "id": "email",
+                "name": "email",
+                "tipo": "email",
+                "obrigatorio": true,
+                "opcoes": null
+              },
+              {
+                "id": "telefone",
+                "name": "telefone",
+                "tipo": "tel",
+                "obrigatorio": false,
+                "opcoes": null
+              },
+              {
+                "id": "perfil",
+                "name": "perfil",
+                "tipo": "select",
+                "obrigatorio": true,
+                "opcoes": [
+                  "Selecione",
+                  "Curso para mim",
+                  "Mentoria individual ou em grupo",
+                  "Treinamento para equipe",
+                  "Solução para organização",
+                  "Outro assunto"
+                ]
+              },
+              {
+                "id": "assunto",
+                "name": "assunto",
+                "tipo": "input",
+                "obrigatorio": true,
+                "opcoes": null
+              },
+              {
+                "id": "mensagem",
+                "name": "mensagem",
+                "tipo": "textarea",
+                "obrigatorio": true,
+                "opcoes": null
+              }
+            ],
+            "botoes": [
+              "Preparar e-mail"
+            ]
+          }
+        ],
+        "faq": [
+          {
+            "pergunta": "Os treinamentos podem ser personalizados?",
+            "resposta": "Sim. A proposta pode ser desenhada após diagnóstico de público, objetivos, contexto e desafios."
+          },
+          {
+            "pergunta": "As mentorias podem ser em grupo?",
+            "resposta": "Sim. Há possibilidades individuais e em grupo, conforme o objetivo e o perfil dos participantes."
+          },
+          {
+            "pergunta": "Há atendimento on-line?",
+            "resposta": "Sim. A Neduc trabalha com formatos presenciais, on-line ao vivo e EaD."
+          }
+        ]
+      },
+      "acessibilidade": {
+        "arquivo": "acessibilidade.html",
+        "rota": "#/acessibilidade",
+        "descricao_pagina": "Compromisso de acessibilidade digital da Neduc.",
+        "titulos_principais": [
+          "Acessibilidade"
+        ],
+        "subtitulos": [
+          "Recursos implementados",
+          "Melhoria contínua"
+        ],
+        "titulos_terciarios": [],
+        "links_internos": [
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [],
+        "faq": []
+      },
+      "privacidade": {
+        "arquivo": "privacidade.html",
+        "rota": "#/privacidade",
+        "descricao_pagina": "Informações sobre privacidade no site institucional da Neduc.",
+        "titulos_principais": [
+          "Privacidade"
+        ],
+        "subtitulos": [
+          "Formulário de contato",
+          "Newsletter",
+          "Hospedagem",
+          "Atualização necessária"
+        ],
+        "titulos_terciarios": [],
+        "links_internos": [
+          "#/inicio"
+        ],
+        "imagens": [],
+        "formularios": [],
+        "faq": []
+      }
+    },
+    "blog": {
+      "tipo_conteudo": "AsciiDoc",
+      "organizacao": "ano e mês, conforme texto da página",
+      "artigos_metadata_incluidos": false,
+      "observacao": "Os arquivos enviados contêm template e espaços para artigos dinâmicos; não contêm os artigos nem o catálogo JSON."
+    },
+    "formularios": {
+      "contato": [
+        {
+          "id": "contato-form",
+          "campos": [
+            {
+              "id": "nome",
+              "name": "nome",
+              "tipo": "input",
+              "obrigatorio": true,
+              "opcoes": null
+            },
+            {
+              "id": "email",
+              "name": "email",
+              "tipo": "email",
+              "obrigatorio": true,
+              "opcoes": null
+            },
+            {
+              "id": "telefone",
+              "name": "telefone",
+              "tipo": "tel",
+              "obrigatorio": false,
+              "opcoes": null
+            },
+            {
+              "id": "perfil",
+              "name": "perfil",
+              "tipo": "select",
+              "obrigatorio": true,
+              "opcoes": [
+                "Selecione",
+                "Curso para mim",
+                "Mentoria individual ou em grupo",
+                "Treinamento para equipe",
+                "Solução para organização",
+                "Outro assunto"
+              ]
+            },
+            {
+              "id": "assunto",
+              "name": "assunto",
+              "tipo": "input",
+              "obrigatorio": true,
+              "opcoes": null
+            },
+            {
+              "id": "mensagem",
+              "name": "mensagem",
+              "tipo": "textarea",
+              "obrigatorio": true,
+              "opcoes": null
+            }
+          ],
+          "botoes": [
+            "Preparar e-mail"
+          ]
+        }
+      ],
+      "newsletter_rodape": [
+        {
+          "id": "newsletter-form",
+          "campos": [
+            {
+              "id": "newsletter-email",
+              "name": "email",
+              "tipo": "email",
+              "obrigatorio": true
+            }
+          ]
+        }
+      ],
+      "comportamento_contato": "O texto de contato.html diz que o formulário prepara e-mail no aplicativo do visitante; o JS executável não foi fornecido para validação.",
+      "comportamento_newsletter": "O texto de privacidade.html afirma que o cadastro de newsletter é demonstrativo; integração real não verificada."
+    },
+    "acessibilidade": {
+      "recursos_declarados": [
+        "Link para pular diretamente ao conteúdo principal.",
+        "Estrutura semântica com cabeçalho, navegação, conteúdo principal e rodapé.",
+        "Estados de foco visíveis e navegação por teclado.",
+        "Textos alternativos em imagens relevantes e imagens decorativas com alternativa vazia.",
+        "Contraste visual e tamanhos responsivos.",
+        "Suporte à preferência de movimento reduzido.",
+        "Formulários com rótulos, instruções e mensagens em regiões anunciáveis."
+      ],
+      "canal_barreiras": "contato@neduc.com.br",
+      "auditoria_externa_realizada": null
+    },
+    "infraestrutura": {
+      "hospedagem_atual_confirmada": null,
+      "github_pages_mencionado_na_politica": true,
+      "analytics_confirmado": false,
+      "meio_pagamento_integrado_no_modelo": false,
+      "backend_confirmado": false
+    }
+  },
+  "pendencias_para_confirmar": [
+    "Vínculo jurídico da marca Neduc ao CNPJ cadastrado",
+    "Grafia integral do complemento do endereço no comprovante",
+    "Domínio oficial de produção do site",
+    "URLs reais das redes Facebook, LinkedIn e YouTube",
+    "Responsável/canal para direitos dos titulares",
+    "Configuração real de hospedagem, scripts, cookies, coleta e fornecedores",
+    "Bases legais, retenção, transferências e processos LGPD",
+    "Conteúdo dos arquivos externos JS, CSS, catálogos JSON e artigos AsciiDoc",
+    "Confirmação atual da situação cadastral do CNPJ"
+  ]
+}
